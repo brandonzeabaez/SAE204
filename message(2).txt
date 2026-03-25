@@ -143,7 +143,7 @@ CREATE TABLE Repas(
 
 
 
-CREATE TABLE Composé(
+CREATE TABLE Compose(
    idP NUMBER(6, 1),
    idR NUMBER(6, 1),
    PRIMARY KEY(idP, idR),
@@ -151,7 +151,7 @@ CREATE TABLE Composé(
    FOREIGN KEY(idR) REFERENCES Repas(idR)
 );
 
-CREATE TABLE Consistue(
+CREATE TABLE Consistu(
    idP NUMBER(6, 1),
    idA NUMBER(6, 1),
    PRIMARY KEY(idP, idA),
@@ -159,7 +159,7 @@ CREATE TABLE Consistue(
    FOREIGN KEY(idA) REFERENCES Aliment(idA)
 );
 
-CREATE TABLE Est_constitué(
+CREATE TABLE Est_constitue(
    idS NUMBER(6, 1),
    idI NUMBER(6, 1),
    PRIMARY KEY(idS, idI),
