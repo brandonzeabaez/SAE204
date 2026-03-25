@@ -80,13 +80,13 @@ CREATE TABLE TresHautGradee(
 
 CREATE TABLE NomMachine(
    idNM VARCHAR2(50),
-   nomMachine VARCHAR2(20),
+   nomMachine VARCHAR2(30),
    PRIMARY KEY(idNM)
 );
 
 CREATE TABLE TypeEntretien(
    idE NUMBER(6, 1),
-   typeEntretien VARCHAR2(20),
+   typeEntretien VARCHAR2(30),
    PRIMARY KEY(idE)
 );
 
