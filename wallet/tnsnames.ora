@@ -1,0 +1,12 @@
+tenrac_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-marseille-1.oraclecloud.com))(connect_data=(service_name=gfc2f9296059d48_tenrac_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+tenrac_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-marseille-1.oraclecloud.com))(connect_data=(service_name=gfc2f9296059d48_tenrac_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+tenrac_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-marseille-1.oraclecloud.com))(connect_data=(service_name=gfc2f9296059d48_tenrac_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+tenrac_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-marseille-1.oraclecloud.com))(connect_data=(service_name=gfc2f9296059d48_tenrac_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+tenrac_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-marseille-1.oraclecloud.com))(connect_data=(service_name=gfc2f9296059d48_tenrac_tpurgent.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+
