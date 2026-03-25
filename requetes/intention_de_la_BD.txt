@@ -1,0 +1,262 @@
+
+CREATE TABLE Aliment(
+   idA NUMBER(6, 1),
+   nomAliment VARCHAR2(20),
+   PRIMARY KEY(idA)
+);
+
+CREATE TABLE Sauce(
+   idS NUMBER(6, 1),
+   nomSauce VARCHAR2(20),
+   PRIMARY KEY(idS)
+);
+
+CREATE TABLE Ingredient(
+   idI NUMBER(6, 1),
+   nomIngredient VARCHAR2(30),
+   PRIMARY KEY(idI)
+);
+
+CREATE TABLE Modele(
+   idMo NUMBER(6, 1),
+   nomModele VARCHAR2(30),
+   PRIMARY KEY(idMo)
+);
+
+CREATE TABLE Titre(
+   idT NUMBER(6, 1),
+   nomTitre CHAR(14),
+   PRIMARY KEY(idT)
+);
+
+CREATE TABLE Dignite(
+   idD NUMBER(6, 1),
+   nomDignite CHAR(20),
+   PRIMARY KEY(idD)
+);
+
+CREATE TABLE Rang(
+   idRa NUMBER(6, 1),
+   nomRang CHAR(9),
+   PRIMARY KEY(idRa)
+);
+
+CREATE TABLE Legume(
+   idL NUMBER(6, 1),
+   nomLegume VARCHAR2(20),
+   PRIMARY KEY(idL)
+);
+
+CREATE TABLE Organisation(
+   idO NUMBER(6, 1),
+   PRIMARY KEY(idO)
+);
+
+CREATE TABLE Organisme(
+   idOr NUMBER(6, 1),
+   raisonSociale VARCHAR2(50),
+   numeroSiret NUMBER(6, 1),
+   PRIMARY KEY(idOr)
+);
+
+CREATE TABLE Grade(
+   idG NUMBER(6, 1),
+   PRIMARY KEY(idG)
+);
+
+CREATE TABLE PasTresHautGradee(
+   idG NUMBER(6, 1),
+   nomDeGrade CHAR(20),
+   PRIMARY KEY(idG),
+   FOREIGN KEY(idG) REFERENCES Grade(idG)
+);
+
+CREATE TABLE TresHautGradee(
+   idG NUMBER(6, 1),
+   nomDeGrade CHAR(20),
+   PRIMARY KEY(idG),
+   FOREIGN KEY(idG) REFERENCES Grade(idG)
+);
+
+CREATE TABLE NomMachine(
+   idNM VARCHAR2(50),
+   nomMachine VARCHAR2(30),
+   PRIMARY KEY(idNM)
+);
+
+CREATE TABLE TypeEntretien(
+   idE NUMBER(6, 1),
+   typeEntretien VARCHAR2(30),
+   PRIMARY KEY(idE)
+);
+
+CREATE TABLE Ordre(
+   idO NUMBER(6, 1),
+   nomOrdre VARCHAR2(30),
+   territoire VARCHAR2(30),
+   PRIMARY KEY(idO),
+   FOREIGN KEY(idO) REFERENCES Organisation(idO)
+);
+
+CREATE TABLE Plat(
+   idP NUMBER(6, 1),
+   nomPlat VARCHAR2(20),
+   idL NUMBER(6, 1),
+   PRIMARY KEY(idP),
+   FOREIGN KEY(idL) REFERENCES Legume(idL)
+);
+
+CREATE TABLE AdressePartenaire(
+   idA NUMBER(6, 1),
+   adressePart VARCHAR2(30),
+   idO NUMBER(6, 1) NOT NULL,
+   PRIMARY KEY(idA),
+   FOREIGN KEY(idO) REFERENCES Ordre(idO)
+);
+
+CREATE TABLE Club(
+   idO_1 NUMBER(6, 1),
+   nomClub VARCHAR2(30),
+   adresseClub VARCHAR2(30),
+   idO NUMBER(6, 1) NOT NULL,
+   PRIMARY KEY(idO_1),
+   FOREIGN KEY(idO_1) REFERENCES Organisation(idO),
+   FOREIGN KEY(idO) REFERENCES Ordre(idO)
+);
+
+CREATE TABLE Machine(
+   idM NUMBER(6, 1),
+   idNM VARCHAR2(50) NOT NULL,
+   idMo NUMBER(6, 1) NOT NULL,
+   PRIMARY KEY(idM),
+   FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
+   FOREIGN KEY(idMo) REFERENCES Modele(idMo)
+);
+
+CREATE TABLE Repas(
+   idR NUMBER(6, 1),
+   intitule VARCHAR2(30),
+   idM NUMBER(6, 1) NOT NULL,
+   PRIMARY KEY(idR),
+   FOREIGN KEY(idM) REFERENCES Machine(idM)
+);
+
+
+
+CREATE TABLE Composé(
+   idP NUMBER(6, 1),
+   idR NUMBER(6, 1),
+   PRIMARY KEY(idP, idR),
+   FOREIGN KEY(idP) REFERENCES Plat(idP),
+   FOREIGN KEY(idR) REFERENCES Repas(idR)
+);
+
+CREATE TABLE Consistue(
+   idP NUMBER(6, 1),
+   idA NUMBER(6, 1),
+   PRIMARY KEY(idP, idA),
+   FOREIGN KEY(idP) REFERENCES Plat(idP),
+   FOREIGN KEY(idA) REFERENCES Aliment(idA)
+);
+
+CREATE TABLE Est_constitué(
+   idS NUMBER(6, 1),
+   idI NUMBER(6, 1),
+   PRIMARY KEY(idS, idI),
+   FOREIGN KEY(idS) REFERENCES Sauce(idS),
+   FOREIGN KEY(idI) REFERENCES Ingredient(idI)
+);
+
+CREATE TABLE Contient(
+   idP NUMBER(6, 1),
+   idS NUMBER(6, 1),
+   PRIMARY KEY(idP, idS),
+   FOREIGN KEY(idP) REFERENCES Plat(idP),
+   FOREIGN KEY(idS) REFERENCES Sauce(idS)
+);
+
+CREATE TABLE Necessite(
+   idMo NUMBER(6, 1),
+   idNM VARCHAR2(50),
+   idE NUMBER(6, 1),
+   periodicite VARCHAR2(30),
+   PRIMARY KEY(idMo, idNM, idE),
+   FOREIGN KEY(idMo) REFERENCES Modele(idMo),
+   FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
+   FOREIGN KEY(idE) REFERENCES TypeEntretien(idE)
+);
+
+CREATE TABLE Tenrac(
+   idO NUMBER(6, 1),
+   idOr NUMBER(6, 1),
+   idT NUMBER(6, 1),
+   nomTenrac VARCHAR2(20),
+   courrier VARCHAR2(50),
+   telephone CHAR(13),
+   adressePostal VARCHAR2(20),
+   idG NUMBER(6, 1) NOT NULL,
+   idT_1 NUMBER(6, 1),
+   idD NUMBER(6, 1),
+   idRa NUMBER(6, 1),
+   PRIMARY KEY(idO, idOr, idT),
+   FOREIGN KEY(idO) REFERENCES Organisation(idO),
+   FOREIGN KEY(idOr) REFERENCES Organisme(idOr),
+   FOREIGN KEY(idG) REFERENCES Grade(idG),
+   FOREIGN KEY(idT_1) REFERENCES Titre(idT),
+   FOREIGN KEY(idD) REFERENCES Dignite(idD),
+   FOREIGN KEY(idRa) REFERENCES Rang(idRa)
+);
+
+CREATE TABLE Reunion(
+   idR NUMBER(6, 1),
+   date_ DATE,
+   nomReunion VARCHAR2(20),
+   idO NUMBER(6, 1) NOT NULL,
+   idOr NUMBER(6, 1) NOT NULL,
+   idT NUMBER(6, 1) NOT NULL,
+   idA NUMBER(6, 1) NOT NULL,
+   PRIMARY KEY(idR, date_),
+   FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+   FOREIGN KEY(idA) REFERENCES AdressePartenaire(idA)
+);
+CREATE TABLE Assiste(
+   idO NUMBER(6, 1),
+   idOr NUMBER(6, 1),
+   idT NUMBER(6, 1),
+   idR NUMBER(6, 1),
+   date_ DATE,
+   PRIMARY KEY(idO, idOr, idT, idR, date_),
+   FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+   FOREIGN KEY(idR, date_) REFERENCES Reunion(idR, date_)
+);
+CREATE TABLE Organise(
+   idR NUMBER(6, 1),
+   date_ DATE,
+   idR_1 NUMBER(6, 1),
+   PRIMARY KEY(idR, date_, idR_1),
+   FOREIGN KEY(idR, date_) REFERENCES Reunion(idR, date_),
+   FOREIGN KEY(idR_1) REFERENCES Repas(idR)
+);
+
+CREATE TABLE Evite(
+   idO NUMBER(6, 1),
+   idOr NUMBER(6, 1),
+   idT NUMBER(6, 1),
+   idL NUMBER(6, 1),
+   motif VARCHAR2(50),
+   PRIMARY KEY(idO, idOr, idT, idL),
+   FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+   FOREIGN KEY(idL) REFERENCES Legume(idL)
+);
+CREATE TABLE Entretien(
+   idO NUMBER(6, 1),
+   idOr NUMBER(6, 1),
+   idT NUMBER(6, 1),
+   idM NUMBER(6, 1),
+   idE NUMBER(6, 1),
+   date_ VARCHAR2(50),
+   PRIMARY KEY(idO, idOr, idT, idM, idE),
+   FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+   FOREIGN KEY(idM) REFERENCES Machine(idM),
+   FOREIGN KEY(idE) REFERENCES TypeEntretien(idE)
+);
