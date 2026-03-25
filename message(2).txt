@@ -13,25 +13,25 @@ CREATE TABLE Sauce(
 
 CREATE TABLE Ingredient(
    idI NUMBER(6, 1),
-   nomIngredient VARCHAR2(20),
+   nomIngredient VARCHAR2(30),
    PRIMARY KEY(idI)
 );
 
 CREATE TABLE Modele(
    idMo NUMBER(6, 1),
-   nomModele VARCHAR2(20),
+   nomModele VARCHAR2(30),
    PRIMARY KEY(idMo)
 );
 
 CREATE TABLE Titre(
    idT NUMBER(6, 1),
-   nomTitre CHAR(12),
+   nomTitre CHAR(14),
    PRIMARY KEY(idT)
 );
 
 CREATE TABLE Dignite(
    idD NUMBER(6, 1),
-   nomDignite CHAR(12),
+   nomDignite CHAR(20),
    PRIMARY KEY(idD)
 );
 
@@ -66,14 +66,14 @@ CREATE TABLE Grade(
 
 CREATE TABLE PasTresHautGradee(
    idG NUMBER(6, 1),
-   nomDeGrade CHAR(12),
+   nomDeGrade CHAR(20),
    PRIMARY KEY(idG),
    FOREIGN KEY(idG) REFERENCES Grade(idG)
 );
 
 CREATE TABLE TresHautGradee(
    idG NUMBER(6, 1),
-   nomDeGrade CHAR(10),
+   nomDeGrade CHAR(20),
    PRIMARY KEY(idG),
    FOREIGN KEY(idG) REFERENCES Grade(idG)
 );
