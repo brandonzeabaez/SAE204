@@ -3,7 +3,8 @@ from faker import Faker
 fake = Faker()
 
 table_tenrac = []
-nom_repas = []
+nom_reunion = ['Assemblée', 'Conseil Kebab', 'Réunion Tenrac', 'Comité Broche', 'Réunion Grill', 'Assise Döner', 'Conclave Gyros', 'Réunion Spit', 'Conseil Roti', 'Réunion Chef', 'Assemblée Spéciale', 'Comité Kebab', 'Réunion Ordre', 'Conseil Maître', 'Réunion Club', 'Assise Viande', 'Conclave Chef', 'Réunion Sauce', 'Conseil Grillade', 'Réunion Dégustation']
+nom_repas = ['Kebab Royal', 'Assiette Döner', 'Galette Poulet', 'Sandwich Mixte', 'Kebab Classique', 'Assiette Gyros', 'Kebab Fromage', 'Assiette Poulet', 'Sandwich Döner', 'Kebab Maison', 'Galette Agneau', 'Assiette Mixte', 'Kebab Spécial', 'Sandwich Royal', 'Galette Fromage', 'Assiette Boeuf', 'Kebab Poulet', 'Sandwich Agneau', 'Assiette Royale', 'Kebab Légumes']
 nom_club = ['Club Kebab', 'Le Cercle du Döner', 'Les Amis du Gyros', 'La Confrérie du Kebab', 'Club de la Broche', 'L\'Alliance du Spit', 'Le Pavillon du Grill', 'Les Maîtres du Roti', 'La Table d\'Or', 'Le Comptoir du Kebab', 'Le Salon du Méchoui', 'Les Compagnons du Döner', 'L\'Ordre du Barbecue', 'La Grande Confrérie', 'Le Club des Rotisseurs', 'Les Gourmets du Kebab', 'La Société du Gyros', 'Les Enthousiastes du Döner', 'Le Cercle des Grillades', 'La Maison du Kebab', 'L\'Académie du Spit', 'Les Souverains du Döner', 'Le Temple du Kebab', 'La Légende du Gyros', 'Les Chevaliers du Grill', 'La Confrérie des Rotis', 'Le Clube dos Kebabs', 'Il Circolo del Döner', 'Der Kebab Klub', 'The Kebab Society', 'Les Ambassadeurs', 'Les Émissaires', 'Les Connaisseurs', 'Les Dévoreurs', 'Les Dégustateurs', 'Les Explorateurs', 'Les Pèlerins', 'Les Gardiens', 'Les Veilleurs', 'Les Sentinelles', 'Les Fidèles', 'Les Passionnés', 'Les Érudits', 'Les Sages', 'Les Princes', 'Les Seigneurs', 'Les Barons', 'Les Ducs', 'Les Vicomtes', 'Les Marquis']
 nom_territoire = ['Ile-de-France', 'Provence-Alpes-Côte', 'Nouvelle-Aquitaine', 'Auvergne-Rhône-Alpes', 'Hauts-de-France', 'Normandie', 'Bretagne', 'Grand Est', 'Pays de la Loire', 'Occitanie', 'Bourgogne-Comté', 'Centre-Val-Loire', 'Corse']
 nom_ordre = ['Ordre du Kebab', 'Ordre de la Broche', 'Ordre du Gyros', 'Ordre du Döner', 'Ordre de la Grillade', 'Ordre du Rotisseur', 'Ordre du Spit', 'Ordre du Méchoui', 'Ordre de la Viande', 'Ordre du Barbecue']
@@ -190,8 +191,117 @@ for i in range(1,10) :
 for i in range(1,10) :
     extension_repas = {
         "idR : ": i,
-        "intitule : ": 
+        "intitule : ": fake.random_element(elements=nom_repas)
         # FOREIGN KEY(idNM) REFERENCES NomMachine(idNM)
         #  FOREIGN KEY(idMo) REFERENCES Modele(idMo)
         }
-    #print(extension_)
+    #print(extension_repas)
+
+for i in range(1,10) :
+    extension_compose = {
+        "idP : ": i
+        # FOREIGN KEY(idP) REFERENCES Plat(idP),
+        # FOREIGN KEY(idR) REFERENCES Repas(idR)
+        }
+    #print(extension_compose)
+
+for i in range(1,10) :
+    extension_constitue = {
+        #PRIMARY KEY(idP, idA),
+         #FOREIGN KEY(idP) REFERENCES Plat(idP),
+        #FOREIGN KEY(idA) REFERENCES Aliment(idA)
+        }
+    #print(extension_constitue)
+
+for i in range(1,10) :
+    extension_est_constitue = {
+        #PRIMARY KEY(idS, idI)
+        # FOREIGN KEY(idP) REFERENCES Plat(idP),
+        # FOREIGN KEY(idR) REFERENCES Repas(idR)
+        }
+    #print(extension_est_constitue)
+
+for i in range(1,10) :
+    extension_contient = {
+        #PRIMARY KEY(idP, idS),
+        #FOREIGN KEY(idP) REFERENCES Plat(idP),
+        #FOREIGN KEY(idS) REFERENCES Sauce(idS)
+        }
+    #print(extension_contient)
+
+for i in range(1,10) :
+    extension_necessite = {
+         #PRIMARY KEY(idMo, idNM, idE),
+         #FOREIGN KEY(idMo) REFERENCES Modele(idMo),
+         #FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
+         #FOREIGN KEY(idE) REFERENCES TypeEntretien(idE)
+        }
+    #print(extension_necessite)
+
+for i in range(1,10) :
+    extension_tenrac = {
+        "idT : ": i,
+        "nomTenrac : ": fake.name(),
+        "courrier : ": fake.free_email(),
+        "telephone : ": fake.phone_number(),
+        "adressePostal : ": fake.address("|n",", ")
+        #idG NUMBER(6, 1) NOT NULL,
+        #idT_1 NUMBER(6, 1),
+        #idD NUMBER(6, 1),
+        #idRa NUMBER(6, 1),
+         #PRIMARY KEY(idO, idOr, idT),
+         #FOREIGN KEY(idO) REFERENCES Organisation(idO),
+         #FOREIGN KEY(idOr) REFERENCES Organisme(idOr),
+         #FOREIGN KEY(idG) REFERENCES Grade(idG),
+         #FOREIGN KEY(idT_1) REFERENCES Titre(idT),
+         #FOREIGN KEY(idD) REFERENCES Dignite(idD),
+         #FOREIGN KEY(idRa) REFERENCES Rang(idRa)
+        }
+    #print(extension_tenrac)
+
+for i in range(1,10) :
+    extension_reunion = {
+         "idR : ": i,
+         "date_ : ": fake.date(),
+         "nomReunion : ": fake.random_element(elements=nom_reunion)
+         #idO NUMBER(6, 1) NOT NULL,
+         #idOr NUMBER(6, 1) NOT NULL,
+         #idT NUMBER(6, 1) NOT NULL,
+         #idA NUMBER(6, 1) NOT NULL,
+         #PRIMARY KEY(idR, date_),
+         #FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+         #FOREIGN KEY(idA) REFERENCES AdressePartenaire(idA)
+        }
+    #print(extension_reunion)
+
+for i in range(1,10) :
+    extension_assiste = {
+         #idO NUMBER(6, 1),
+   #idOr NUMBER(6, 1),
+   #idT NUMBER(6, 1),
+   #idR NUMBER(6, 1),
+   #date_ DATE,
+   #PRIMARY KEY(idO, idOr, idT, idR, date_),
+   #FOREIGN KEY(idO, idOr, idT) REFERENCES Tenrac(idO, idOr, idT),
+   #FOREIGN KEY(idR, date_) REFERENCES Reunion(idR, date_)
+        }
+    #print(extension_assiste)
+
+for i in range(1,10) :
+    extension_organise = {
+         #PRIMARY KEY(idMo, idNM, idE),
+         #FOREIGN KEY(idMo) REFERENCES Modele(idMo),
+         #FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
+         #FOREIGN KEY(idE) REFERENCES TypeEntretien(idE)
+        }
+    #print(extension_organise)
+
+for i in range(1,10) :
+    extension_evite = {
+         #PRIMARY KEY(idMo, idNM, idE),
+         #FOREIGN KEY(idMo) REFERENCES Modele(idMo),
+         #FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
+         #FOREIGN KEY(idE) REFERENCES TypeEntretien(idE)
+        }
+    #print(extension_organise)
+
