@@ -92,8 +92,8 @@ CREATE TABLE TypeEntretien(
 
 CREATE TABLE Ordre(
    idO NUMBER(6, 1),
-   nomOrdre VARCHAR2(20),
-   territoire VARCHAR2(20),
+   nomOrdre VARCHAR2(30),
+   territoire VARCHAR2(30),
    PRIMARY KEY(idO),
    FOREIGN KEY(idO) REFERENCES Organisation(idO)
 );
@@ -116,7 +116,7 @@ CREATE TABLE AdressePartenaire(
 
 CREATE TABLE Club(
    idO_1 NUMBER(6, 1),
-   nomClub VARCHAR2(20),
+   nomClub VARCHAR2(30),
    adresseClub VARCHAR2(30),
    idO NUMBER(6, 1) NOT NULL,
    PRIMARY KEY(idO_1),
@@ -135,7 +135,7 @@ CREATE TABLE Machine(
 
 CREATE TABLE Repas(
    idR NUMBER(6, 1),
-   NUMBERitule VARCHAR2(20),
+   intitule VARCHAR2(30),
    idM NUMBER(6, 1) NOT NULL,
    PRIMARY KEY(idR),
    FOREIGN KEY(idM) REFERENCES Machine(idM)
