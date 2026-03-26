@@ -1,5 +1,6 @@
 from faker import Faker
 from random import randint
+import random
 import numpy as np
 fake = Faker()
 
@@ -274,6 +275,7 @@ mois = mois + tmp
 Reunion=[{'idR' : i,
           'date' : mois[randint(0,11)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
           for i in range(1,len(nom_reunion)+1) for j in range(800)]
+# /TODO
 EstConstitue = [{'idS': fake.unique.random_int(0,len(Sauce)-1),
                 'idI' : fake.unique.random_int(0,len(Ingredient)-1)}
                  for i in range(min(len(Sauce), len(Ingredient)))]
@@ -309,3 +311,51 @@ Plat = [{"idP" : i+1,
         "nomPlat" : fake.random_element(elements=ordreNom_contrainte),
         "idL" : fake.random_element(elements=legumes_contraintes)}
         for i in range(randint(0,len(Legume)-1))]
+
+
+def couplesUniques(lst1:list,lst2 :list)->list :
+    couples = set()
+    while len(couples) < randint(min(len(lst1),len(lst2)),len(lst1)*len(lst2)):
+        i = random.randint(1, len(lst1)+1)
+        j = random.randint(1, len(lst2)+1)
+        couples.add((i, j))
+    return couples
+
+Constitue = [{"idP" : i,
+              "idA" : j}
+             for (i,j) in couplesUniques(Plat,Aliments)
+            ]
+Contient = [{"idP" : i,
+             "idS" : j}
+            for (i,j) in couplesUniques(Plat,Sauce)]
+repas_intitule_contrainte = ["Poulet rôti", "Poulet curry", "Poulet basquaise",
+"Poulet à la crème", "Escalope de poulet", "Steak frites",
+"Steak sauce poivre", "Bœuf bourguignon", "Bœuf carottes",
+"Hachis parmentier", "Lasagnes bolognaise", "Spaghetti bolognaise",
+"Spaghetti carbonara", "Pâtes au pesto", "Pâtes au saumon",
+"Pâtes à la crème", "Chili con carne", "Couscous",
+"Tajine poulet", "Tajine agneau", "Kebab",
+"Burger maison", "Saucisses lentilles", "Cordon bleu",
+"Blanquette de veau", "Carbonnade flamande", "Rôti de porc",
+"Porc au caramel", "Saumon grillé", "Saumon à la crème",
+"Cabillaud vapeur", "Cabillaud sauce citron", "Thon à la tomate",
+"Sardines grillées", "Poisson pané", "Paëlla",
+"Risotto aux fruits de mer", "Crevettes sautées", "Moules marinières",
+"Riz cantonais", "Riz poulet", "Riz légumes",
+"Risotto champignons", "Risotto poulet", "Nouilles sautées",
+"Nouilles poulet", "Nouilles crevettes", "Omelette fromage",
+"Omelette champignons", "Ratatouille", "Gratin dauphinois",
+"Gratin de légumes", "Soupe de légumes", "Salade composée",
+"Salade César", "Salade niçoise", "Quiche lorraine",
+"Quiche légumes", "Tarte tomate", "Tarte aux légumes",
+"Falafel", "Curry de légumes", "Chili sin carne",
+"Sandwich jambon beurre", "Croque monsieur", "Croque madame",
+"Panini poulet", "Panini fromage", "Wrap poulet",
+"Wrap thon", "Pizza margherita", "Pizza reine",
+"Pizza 4 fromages", "Hot dog", "Nuggets frites"
+]
+
+Repas= [{"idR" : i,
+        "intitule" : "",
+        "idM" : j}
+        for i in range(1,len(repas_intitule_contrainte)+1)]
