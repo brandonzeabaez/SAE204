@@ -61,7 +61,7 @@ def effacerDonnesTables(nom_table : str) :
 
 def insertionDonneesTables(donnees,nom_table) :
     cursor = connection.cursor()
-    f = open('requetes/insertion_donnees' + nom_table + '.txt', 'a')
+    f = open('requetes/insertion_donnees/' + nom_table + '.txt', 'a')
     for i in donnees :
         sql="INSERT INTO " + nom_table + " VALUES("
         for j in i.values() :
@@ -74,13 +74,14 @@ def insertionDonneesTables(donnees,nom_table) :
 def effacerContenuDuFichier(fiename) :
     file = open('requetes/' + fiename, 'w')
     file.close()
+
 #effacerDonnesTables('Aliment')
 #insertionDonneesTables(list_test,'Aliment')
 #cursor = connection.cursor()
 #effacerContenuDuFichier('insertion_donneesAliment.txt')
 #effacerDonnesTables('Aliment')
 #print(cursor.execute("SELECT * FROM Aliment").fetchall())
-
+#dropToutesLesTables()
 #createToutesLesTables()
 #createInsertionFiles()
 
