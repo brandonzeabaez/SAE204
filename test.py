@@ -41,7 +41,7 @@ rang_contraintes = ['Novice', 'Compagnon']
 titre_contraintes = ['Philanthrope', 'Protecteur', 'Honorable']
 dignite_contraintes = ['Maître', 'Grand Chancelier', 'Grand Maître']
 
-
+fake.phon
 
 nom_ingredient = ['Tomate', 'Oignon', 'Ail', 'Carotte', 'Pomme de terre', 'Courgette', 'Aubergine', 'Poivron',
                   'Champignon']

@@ -105,10 +105,10 @@ Aliments = [{'idA' : i,
             for i in range(1,len(aliments_contraintes)+1)]
 #print(obtenirToutesLesTables())
 #insertionDonneesTables(Aliments,'Aliment')
-cursor = connection.cursor()
-cursor.execute('SELECT * FROM Aliment')
-print(cursor.fetchall())
-
+#cursor = connection.cursor()
+#cursor.execute('SELECT * FROM Aliment')
+#print(cursor.fetchall())
+obtenirToutesLesTables()
 #effacerDonnesTables('Aliment')
 #insertionDonneesTables(list_test,'Aliment')
 #cursor = connection.cursor()
