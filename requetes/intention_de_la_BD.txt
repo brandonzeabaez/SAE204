@@ -1,47 +1,41 @@
 
 
 CREATE TABLE Aliment(
-   idA NUMBER(6),
-   nomAliment VARCHAR2(20),
-   PRIMARY KEY(idA)
+   idA NUMBER(6) PRIMARY KEY,
+   nomAliment VARCHAR2(20)
 );
 
 CREATE TABLE Sauce(
-   idS NUMBER(6),
-   nomSauce VARCHAR2(20),
-   PRIMARY KEY(idS)
+   idS NUMBER(6) PRIMARY KEY,
+   nomSauce VARCHAR2(20)
 );
 
 CREATE TABLE Ingredient(
-   idI NUMBER(6),
-   nomIngredient VARCHAR2(20),
-   PRIMARY KEY(idI)
+   idI NUMBER(6) PRIMARY KEY,
+   nomIngredient VARCHAR2(20)
+
 );
 
 CREATE TABLE Modele(
-   idMo NUMBER(6),
-   nomModele VARCHAR2(20),
-   PRIMARY KEY(idMo)
+   idMo NUMBER(6) PRIMARY KEY,
+   nomModele VARCHAR2(20)
 );
 
 CREATE TABLE Titre(
-   idTi NUMBER(6),
+   idTi NUMBER(6) PRIMARY KEY,
    nomTitre CHAR(12),
-   PRIMARY KEY(idTi),
    CONSTRAINT ck_nom_titre CHECK (nomTitre IN('PHILANTHROPE', 'PROTECTEUR', 'HONORABLE'))
 );
 
 CREATE TABLE Dignite(
-   idD NUMBER(6),
+   idD NUMBER(6) PRIMARY KEY,
    nomDignite CHAR(20),
-   PRIMARY KEY(idD),
    CONSTRAINT ck_dignite CHECK (nomDignite IN('MAITRE', 'GRAND CHANCELIER', 'GRAND MAITRE'))
 );
 
 CREATE TABLE Rang(
-   idRa NUMBER(6),
+   idRa NUMBER(6) PRIMARY KEY,
    nomRang CHAR(9),
-   PRIMARY KEY(idRa),
    CONSTRAINT ck_nomRang CHECK (nomRang IN('NOVICE', 'COMPAGNON'))
 );
 

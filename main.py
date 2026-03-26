@@ -44,6 +44,7 @@ def createToutesLesTables() :
     with connection.cursor() as cursor:
         for sql in lst:
             cursor.execute(sql)
+            print('Table created :',obtenirToutesLesTables()[-1])
 def createInsertionFiles() :
     for i in obtenirToutesLesTables() :
         f = open('requetes/insertion_donnees'+i+'.txt','w')
@@ -99,22 +100,23 @@ aliments_contraintes = [
 #dropToutesLesTables()
 
 #createToutesLesTables()
-
+cursor = connection.cursor()
 Aliments = [{'idA' : i,
              'nomAliment' : "'"+aliments_contraintes[i-1].upper()+"'"}
             for i in range(1,len(aliments_contraintes)+1)]
 #print(obtenirToutesLesTables())
-#insertionDonneesTables(Aliments,'Aliment')
-#cursor = connection.cursor()
-#cursor.execute('SELECT * FROM Aliment')
-#print(cursor.fetchall())
-obtenirToutesLesTables()
 #effacerDonnesTables('Aliment')
+#insertionDonneesTables(Aliments,'Aliment')
+#print(cursor.execute("SELECT * FROM Aliment").fetchall())
+
+
+
+
 #insertionDonneesTables(list_test,'Aliment')
-#cursor = connection.cursor()
+
 #effacerContenuDuFichier('insertion_donneesAliment.txt')
 #effacerDonnesTables('Aliment')
-#print(cursor.execute("SELECT * FROM Aliment").fetchall())
+
 #dropToutesLesTables()
 #createToutesLesTables()
 #createInsertionFiles()
