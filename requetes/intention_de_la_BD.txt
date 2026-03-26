@@ -2,25 +2,25 @@
 
 CREATE TABLE Aliment(
    idA NUMBER(6),
-   nomAliment VARCHAR(20),
+   nomAliment VARCHAR2(20),
    PRIMARY KEY(idA)
 );
 
 CREATE TABLE Sauce(
    idS NUMBER(6),
-   nomSauce VARCHAR(20),
+   nomSauce VARCHAR2(20),
    PRIMARY KEY(idS)
 );
 
 CREATE TABLE Ingredient(
    idI NUMBER(6),
-   nomIngredient VARCHAR(20),
+   nomIngredient VARCHAR2(20),
    PRIMARY KEY(idI)
 );
 
 CREATE TABLE Modele(
    idMo NUMBER(6),
-   nomModele VARCHAR(20),
+   nomModele VARCHAR2(20),
    PRIMARY KEY(idMo)
 );
 
@@ -47,7 +47,7 @@ CREATE TABLE Rang(
 
 CREATE TABLE Legume(
    idL NUMBER(6),
-   nomLegume VARCHAR(20),
+   nomLegume VARCHAR2(20),
    PRIMARY KEY(idL)
 );
 
@@ -58,7 +58,7 @@ CREATE TABLE Organisation(
 
 CREATE TABLE Organisme(
    numeroSiret CHAR(14),
-   raisonSociale VARCHAR(50),
+   raisonSociale VARCHAR2(50),
    PRIMARY KEY(numeroSiret)
 );
 
@@ -84,14 +84,14 @@ CREATE TABLE TresHautGradee(
 );
 
 CREATE TABLE NomMachine(
-   idNM VARCHAR(50),
-   nomMachine VARCHAR(20),
+   idNM VARCHAR2(50),
+   nomMachine VARCHAR2(20),
    PRIMARY KEY(idNM)
 );
 
 CREATE TABLE TypeEntretien(
    idE NUMBER(6),
-   typeEntretien VARCHAR(20),
+   typeEntretien VARCHAR2(20),
    PRIMARY KEY(idE)
 );
 
@@ -99,10 +99,10 @@ CREATE TABLE Tenrac(
    idO NUMBER(6),
    numeroSiret CHAR(14),
    idT NUMBER(6),
-   nomTenrac VARCHAR(20),
-   courrier VARCHAR(50),
+   nomTenrac VARCHAR2(20),
+   courrier VARCHAR2(50),
    telephone CHAR(13),
-   adressePostal VARCHAR(20),
+   adressePostal VARCHAR2(20),
    idG NUMBER(6) NOT NULL,
    idTi NUMBER(6),
    idD NUMBER(6),
@@ -118,15 +118,15 @@ CREATE TABLE Tenrac(
 
 CREATE TABLE Ordre(
    idO NUMBER(6),
-   nomOrdre VARCHAR(20),
-   territoire VARCHAR(20),
+   nomOrdre VARCHAR2(20),
+   territoire VARCHAR2(20),
    PRIMARY KEY(idO),
    FOREIGN KEY(idO) REFERENCES Organisation(idO)
 );
 
 CREATE TABLE Plat(
    idP NUMBER(6),
-   nomPlat VARCHAR(20),
+   nomPlat VARCHAR2(20),
    idL NUMBER(6),
    PRIMARY KEY(idP),
    FOREIGN KEY(idL) REFERENCES Legume(idL)
@@ -134,7 +134,7 @@ CREATE TABLE Plat(
 
 CREATE TABLE AdressePartenaire(
    idA NUMBER(6),
-   adressePart VARCHAR(30),
+   adressePart VARCHAR2(30),
    idO NUMBER(6) NOT NULL,
    PRIMARY KEY(idA),
    FOREIGN KEY(idO) REFERENCES Ordre(idO)
@@ -142,8 +142,8 @@ CREATE TABLE AdressePartenaire(
 
 CREATE TABLE Club(
    idO_1 NUMBER(6),
-   nomClub VARCHAR(20),
-   adresseClub VARCHAR(30),
+   nomClub VARCHAR2(20),
+   adresseClub VARCHAR2(30),
    idO NUMBER(6) NOT NULL,
    PRIMARY KEY(idO_1),
    FOREIGN KEY(idO_1) REFERENCES Organisation(idO),
@@ -152,7 +152,7 @@ CREATE TABLE Club(
 
 CREATE TABLE Machine(
    idM NUMBER(6),
-   idNM VARCHAR(50) NOT NULL,
+   idNM VARCHAR2(50) NOT NULL,
    idMo NUMBER(6) NOT NULL,
    PRIMARY KEY(idM),
    FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
@@ -162,7 +162,7 @@ CREATE TABLE Machine(
 CREATE TABLE Reunion(
    idReunion NUMBER(6),
    date_ DATE,
-   nomReunion VARCHAR(20),
+   nomReunion VARCHAR2(20),
    idO NUMBER(6) NOT NULL,
    numeroSiret CHAR(14) NOT NULL,
    idT NUMBER(6) NOT NULL,
@@ -174,7 +174,7 @@ CREATE TABLE Reunion(
 
 CREATE TABLE Repas(
    idR NUMBER(6),
-   intitule VARCHAR(20),
+   intitule VARCHAR2(20),
    idM NUMBER(6) NOT NULL,
    PRIMARY KEY(idR),
    FOREIGN KEY(idM) REFERENCES Machine(idM)
@@ -237,7 +237,7 @@ CREATE TABLE Evite(
    numeroSiret CHAR(14),
    idT NUMBER(6),
    idL NUMBER(6),
-   motif VARCHAR(50),
+   motif VARCHAR2(50),
    PRIMARY KEY(idO, numeroSiret, idT, idL),
    FOREIGN KEY(idO, numeroSiret, idT) REFERENCES Tenrac(idO, numeroSiret, idT),
    FOREIGN KEY(idL) REFERENCES Legume(idL)
@@ -245,9 +245,9 @@ CREATE TABLE Evite(
 
 CREATE TABLE Necessite(
    idMo NUMBER(6),
-   idNM VARCHAR(50),
+   idNM VARCHAR2(50),
    idE NUMBER(6),
-   periodicite VARCHAR(30),
+   periodicite VARCHAR2(30),
    PRIMARY KEY(idMo, idNM, idE),
    FOREIGN KEY(idMo) REFERENCES Modele(idMo),
    FOREIGN KEY(idNM) REFERENCES NomMachine(idNM),
@@ -260,7 +260,7 @@ CREATE TABLE Entretien(
    idT NUMBER(6),
    idM NUMBER(6),
    idE NUMBER(6),
-   date_ VARCHAR(50),
+   date_ VARCHAR2(50),
    PRIMARY KEY(idO, numeroSiret, idT, idM, idE),
    FOREIGN KEY(idO, numeroSiret, idT) REFERENCES Tenrac(idO, numeroSiret, idT),
    FOREIGN KEY(idM) REFERENCES Machine(idM),
