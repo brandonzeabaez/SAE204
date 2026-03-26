@@ -273,9 +273,7 @@ jour = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10','11','12']
 mois = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
 tmp = [str(i) for i in range(10,32)]
 mois = mois + tmp
-Reunion=[{'idR' : i,
-          'date' : mois[randint(0,11)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
-          for i in range(1,len(nom_reunion)+1) for j in range(800), "idO": randint(1,len(Ordre)-1), "idA": randint(1,len(Aliment)-1)]#idT, numerosiret 
+
 # /TODO
 EstConstitue = [{'idS': fake.unique.random_int(0,len(Sauce)-1),
                 'idI' : fake.unique.random_int(0,len(Ingredient)-1)}
@@ -369,3 +367,7 @@ compose = [{"idP" : i,
 estConstitue = [{"idS" : i,
              "idI" : j}
             for (i,j) in couplesUniques(Sauce,Ingredient)]
+
+Reunion=[{'idR' : i,
+          'date' : mois[randint(0,11)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
+          for i in range(1,len(nom_reunion)+1) for j in range(800), "idO": randint(1,len(Ordre)-1), "idA": randint(1,len(Aliment)-1)]#idT, numerosiret 
