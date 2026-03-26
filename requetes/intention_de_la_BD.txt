@@ -1,6 +1,6 @@
 
 CREATE TABLE Aliment(
-   idA NUMBER(6, 1),
+   idA NUMBER(6),
    nomAliment VARCHAR2(20),
    PRIMARY KEY(idA)
 );
@@ -53,8 +53,9 @@ CREATE TABLE Organisation(
 );
 
 CREATE TABLE Organisme(
-   idOr CHAR(14),
+   idOr NUMBER(6, 1),
    raisonSociale VARCHAR2(50),
+   numeroSiret NUMBER(6, 1),
    PRIMARY KEY(idOr)
 );
 
@@ -142,7 +143,7 @@ CREATE TABLE Repas(
 
 
 
-CREATE TABLE Compose(
+CREATE TABLE Composé(
    idP NUMBER(6, 1),
    idR NUMBER(6, 1),
    PRIMARY KEY(idP, idR),
@@ -150,7 +151,7 @@ CREATE TABLE Compose(
    FOREIGN KEY(idR) REFERENCES Repas(idR)
 );
 
-CREATE TABLE Consistu(
+CREATE TABLE Consistue(
    idP NUMBER(6, 1),
    idA NUMBER(6, 1),
    PRIMARY KEY(idP, idA),

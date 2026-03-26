@@ -41,7 +41,7 @@ titre_contraintes = ['Philanthrope', 'Protecteur', 'Honorable']
 dignite_contraintes = ['Maître', 'Grand Chancelier', 'Grand Maître']
 
 
-nom_legume = ['Salade', 'Tomate', 'Oignon', 'Concombre', 'Chou', 'Poivron', 'Cornichon']
+
 nom_ingredient = ['Tomate', 'Oignon', 'Ail', 'Carotte', 'Pomme de terre', 'Courgette', 'Aubergine', 'Poivron',
                   'Champignon']
 nom_modele = ['KebabMaster Pro', 'Tornado Grill 3000', 'DönerChef Auto', 'SpitRoast X1', 'GyroStar Plus',
@@ -267,3 +267,45 @@ Club = [{"idO_1" : i,
          "idO" : (i-1)%101+1
          }
         for i in range (1,len(nomClub_contrainte)+1)]
+jour = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10','11','12']
+mois = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
+tmp = [str(i) for i in range(10,32)]
+mois = mois + tmp
+Reunion=[{'idR' : i,
+          'date' : mois[randint(0,11)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
+          for i in range(1,len(nom_reunion)+1) for j in range(800)]
+EstConstitue = [{'idS': fake.unique.random_int(0,len(Sauce)-1),
+                'idI' : fake.unique.random_int(0,len(Ingredient)-1)}
+                 for i in range(min(len(Sauce), len(Ingredient)))]
+legumes_contraintes = ["carotte","pomme_de_terre",
+        "tomate","concombre",
+        "courgette","aubergine",
+        "poivron","oignon","ail","échalote",
+        "poireau","chou_vert",
+        "chou_rouge","chou_fleur",
+        "brocoli","chou_de_bruxelles",
+        "navet","radis","radis_noir","betterave","céleri",
+        "céleri_rave","fenouil","épinard",
+        "laitue","roquette","mâche","endive","artichaut","asperge",
+        "haricot_vert","haricot_beurre","petit_pois","fève",
+        "lentille","pois_chiche","maïs","patate_douce",
+        "topinambour","rutabaga","panais","salsifis",
+        "crosne","igname","manioc","taro","courge","courge_butternut",
+        "potiron","potimarron","citrouille","courge_spaghetti",
+        "bette","blette","oseille","cresson",
+        "pak_choi","chou_chinois","chou_kale",
+        "broccolini","romanesco","piment","gombo",
+        "okras","soja","pousse_de_soja","bambou",
+        "algue","cornichon","capre","persil_racine",
+        "raifort","wasabi","mizuna","tatsoi",
+        "amarante_feuille","feuille_de_vigne",
+        "laitue_romaine","laitue_iceberg","scarole","frisée",
+        "chicorée","pissenlit",
+        "plantain","ortie","cardon","chayote",
+        "christophine","calebasse","coloquinte"]
+Legume = [{"idL" : i+1,"nomLegume" : legumes_contraintes[i]} for i in range(len(legumes_contraintes))]
+
+Plat = [{"idP" : i+1,
+        "nomPlat" : fake.random_element(elements=ordreNom_contrainte),
+        "idL" : fake.random_element(elements=legumes_contraintes)}
+        for i in range(randint(0,len(Legume)-1))]

@@ -31,7 +31,6 @@ def dropToutesLesTables() :
 
 #print(obtenirToutesLesTables())
 def createToutesLesTables() :
-
     lst = []
     with open('requetes/intention_de_la_BD.txt','r') as file :
         var=""
@@ -61,7 +60,7 @@ def effacerDonnesTables(nom_table : str) :
 
 def insertionDonneesTables(donnees,nom_table) :
     cursor = connection.cursor()
-    f = open('requetes/insertion_donnees/' + nom_table + '.txt', 'a')
+    f = open('requetes/insertion_donnees/' + nom_table + '.txt', 'w')
     for i in donnees :
         sql="INSERT INTO " + nom_table + " VALUES("
         for j in i.values() :
@@ -75,6 +74,41 @@ def effacerContenuDuFichier(fiename) :
     file = open('requetes/' + fiename, 'w')
     file.close()
 
+
+
+
+
+
+
+
+
+
+#test
+aliments_contraintes = [
+    "pomme", "banane", "poire", "peche", "abricot", "ananas", "mangue", "fraise", "framboise", "cerise",
+    "orange", "citron", "pamplemousse", "raisin", "melon", "pasteque", "kiwi", "prune", "figue", "datte",
+    "riz", "pates", "pain", "semoule", "quinoa", "avoine", "ble", "mais", "farine", "couscous",
+    "poulet", "boeuf", "porc", "agneau", "dinde", "canard", "steak", "jambon", "saucisse", "lardon",
+    "saumon", "thon", "cabillaud", "sardine", "maquereau", "truite", "crevettes", "moules", "huitres", "crabe",
+    "oeuf", "lait", "fromage", "yaourt", "beurre", "creme", "glace", "lait_condense", "lait poudre", "mozzarella",
+    "chocolat", "sucre", "miel", "confiture", "nutella", "caramel", "biscuit", "gateau", "tarte", "croissant",
+    "amandes", "noix", "noisettes", "cacahuetes", "pistaches", "raisins_secs", "cereales", "granola", "barre_cereales", "popcorn",
+    "pizza", "burger", "sandwich", "frites", "omelette", "crepe", "gaufre", "riz au_lait", "mousse_chocolat", "tiramisu",
+    "lasagnes", "spaghetti", "ravioli", "nuggets", "cordon_bleu", "steak hache", "roti", "sushi", "sashimi", "tempura"
+]
+#dropToutesLesTables()
+
+#createToutesLesTables()
+
+Aliments = [{'idA' : i,
+             'nomAliment' : "'"+aliments_contraintes[i-1].upper()+"'"}
+            for i in range(1,len(aliments_contraintes)+1)]
+#print(obtenirToutesLesTables())
+#insertionDonneesTables(Aliments,'Aliment')
+cursor = connection.cursor()
+cursor.execute('SELECT * FROM Aliment')
+print(cursor.fetchall())
+
 #effacerDonnesTables('Aliment')
 #insertionDonneesTables(list_test,'Aliment')
 #cursor = connection.cursor()
@@ -85,5 +119,5 @@ def effacerContenuDuFichier(fiename) :
 #createToutesLesTables()
 #createInsertionFiles()
 
-#connection.commit()
+connection.commit()
 connection.close()
