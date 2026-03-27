@@ -272,14 +272,12 @@ mois = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10','11','12']
 jour = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
 tmp = [str(i) for i in range(10,32)]
 jour = jour + tmp
-Reunion=[{'idR' : i,
-          'date' : jour[randint(0,30)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
+Reunion=[{'idReunion' : i,
+          'date_' : jour[randint(0,30)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
           for i in range(1,len(nom_reunion)+1) for j in range(800)]
 # /TODO
 
-EstConstitue = [{'idS': fake.unique.random_int(0,len(Sauce)-1),
-                'idI' : fake.unique.random_int(0,len(Ingredient)-1)}
-                 for i in range(min(len(Sauce), len(Ingredient)))]
+
 legumes_contraintes = ["carotte","pomme_de_terre",
         "tomate","concombre",
         "courgette","aubergine",
@@ -385,11 +383,32 @@ Necessite = [{"idMo" : i,
             for (i,j,k) in combinaisonNecessite
             ]
 
-#Organise = "IdReunion": for (i,j) in Reunion[[]], "idR": (i-1)%101+1 # manque clé composite idReunion, date_
-compose = [{"idP" : i,
+Compose = [{"idP" : i,
             "idR" : j}
             for (i,j) in couplesUniques(Plat,Repas)]
 estConstitue = [{"idS" : i,
             "idI" : j}
            for (i,j) in couplesUniques(Sauce,Ingredient)]
 
+Organise = [{"idReunion" : Reunion[i-1]["idReunion"],
+            "date_" : Reunion[i-1]["date_"],
+            "idR" : j}
+            for (i,j) in couplesUniques(Reunion,Repas)]
+
+def creationSIRET(n : int)->list:
+    SIRET_liste=[]
+    SIRET=""
+    while(len(SIRET_liste) < n or len(SIRET_liste) != len(set(SIRET_liste))):
+        SIRET =""
+        for i in range(14) :
+            SIRET+=str(random.randint(1,9))
+        SIRET_liste.append(SIRET)
+    return SIRET_liste
+Organisme = [{"numeroSiret" : i ,
+              "raisonSociale" : fake.random_element(elements=raisonSocial_contrainte)}
+             for i in creationSIRET(10000)]
+
+#/TODO Evite
+#/TODO Tenrac
+#/TODO Entretien
+#/Todo Assiste
