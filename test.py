@@ -41,7 +41,7 @@ rang_contraintes = ['Novice', 'Compagnon']
 titre_contraintes = ['Philanthrope', 'Protecteur', 'Honorable']
 dignite_contraintes = ['Maître', 'Grand Chancelier', 'Grand Maître']
 
-fake.phon
+
 
 nom_ingredient = ['Tomate', 'Oignon', 'Ail', 'Carotte', 'Pomme de terre', 'Courgette', 'Aubergine', 'Poivron',
                   'Champignon']
@@ -268,14 +268,15 @@ Club = [{"idO_1" : i,
          "idO" : (i-1)%101+1
          }
         for i in range (1,len(nomClub_contrainte)+1)]
-jour = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10','11','12']
-mois = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
+mois = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10','11','12']
+jour = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
 tmp = [str(i) for i in range(10,32)]
-mois = mois + tmp
+jour = jour + tmp
 Reunion=[{'idR' : i,
-          'date' : mois[randint(0,11)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
+          'date' : jour[randint(0,30)]+'/' + mois[randint(0,11)]+'/' + str(randint(2000,2040))}
           for i in range(1,len(nom_reunion)+1) for j in range(800)]
 # /TODO
+
 EstConstitue = [{'idS': fake.unique.random_int(0,len(Sauce)-1),
                 'idI' : fake.unique.random_int(0,len(Ingredient)-1)}
                  for i in range(min(len(Sauce), len(Ingredient)))]
@@ -316,8 +317,8 @@ Plat = [{"idP" : i+1,
 def couplesUniques(lst1:list,lst2 :list)->list :
     couples = set()
     while len(couples) < randint(min(len(lst1),len(lst2)),len(lst1)*len(lst2)):
-        i = random.randint(1, len(lst1)+1)
-        j = random.randint(1, len(lst2)+1)
+        i = random.randint(1, len(lst1))
+        j = random.randint(1, len(lst2))
         couples.add((i, j))
     return couples
 
@@ -359,3 +360,36 @@ Repas= [{"idR" : i,
         "intitule" : "",
         "idM" : j}
         for i in range(1,len(repas_intitule_contrainte)+1)]
+adressePart_contrainte=[fake.address() for i in range(100)]
+combinaisonsAdressesPartenaire=couplesUniques(adressePart_contrainte,Ordre)
+AdressePartenaire = [{"idA" : k+1,
+                      "adressePart" : adressePart_contrainte[j-1].replace('\n',' '),
+                      "idO" : Ordre[i-1]["idO"]}
+                     for (k,(j,i)) in zip(range(len(combinaisonsAdressesPartenaire)),combinaisonsAdressesPartenaire)
+                    ]
+libelle = ['JOUR','MOIS','ANNEE']
+valeur_libelle = [31,12,10]
+def tripletsUniques(lst1,lst2,lst3) :
+    triplets = set()
+    while len(triplets) < randint(min(len(lst1), len(lst2),len(lst3)), len(lst1) * len(lst2)*len(lst3)):
+        i = random.randint(1, len(lst1))
+        j = random.randint(1, len(lst2))
+        k = random.randint(1, len(lst3))
+        triplets.add((i,j,k))
+    return triplets
+combinaisonNecessite=tripletsUniques(Modele,NomMachine,TypeEntretien)
+Necessite = [{"idMo" : i,
+              "idNM" :   j,
+               "idE" : k,
+               "periodicite" : str(str(randint(1,valeur_libelle[i%3])) + ' ' + libelle[i%3]) }
+            for (i,j,k) in combinaisonNecessite
+            ]
+
+#Organise = "IdReunion": for (i,j) in Reunion[[]], "idR": (i-1)%101+1 # manque clé composite idReunion, date_
+compose = [{"idP" : i,
+            "idR" : j}
+            for (i,j) in couplesUniques(Plat,Repas)]
+estConstitue = [{"idS" : i,
+            "idI" : j}
+           for (i,j) in couplesUniques(Sauce,Ingredient)]
+
