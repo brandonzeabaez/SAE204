@@ -2,23 +2,23 @@
 
 CREATE TABLE Aliment(
    idA NUMBER(6) PRIMARY KEY,
-   nomAliment VARCHAR2(20)
+   nomAliment VARCHAR2(40)
 );
 
 CREATE TABLE Sauce(
    idS NUMBER(6) PRIMARY KEY,
-   nomSauce VARCHAR2(20)
+   nomSauce VARCHAR2(40)
 );
 
 CREATE TABLE Ingredient(
    idI NUMBER(6) PRIMARY KEY,
-   nomIngredient VARCHAR2(20)
+   nomIngredient VARCHAR2(40)
 
 );
 
 CREATE TABLE Modele(
    idMo NUMBER(6) PRIMARY KEY,
-   nomModele VARCHAR2(20)
+   nomModele VARCHAR2(40)
 );
 
 CREATE TABLE Titre(
@@ -29,7 +29,7 @@ CREATE TABLE Titre(
 
 CREATE TABLE Dignite(
    idD NUMBER(6) PRIMARY KEY,
-   nomDignite CHAR(20),
+   nomDignite CHAR(40),
    CONSTRAINT ck_dignite CHECK (nomDignite IN('MAITRE', 'GRAND CHANCELIER', 'GRAND MAITRE'))
 );
 
@@ -41,7 +41,7 @@ CREATE TABLE Rang(
 
 CREATE TABLE Legume(
    idL NUMBER(6),
-   nomLegume VARCHAR2(20),
+   nomLegume VARCHAR2(40),
    PRIMARY KEY(idL)
 );
 
@@ -79,13 +79,13 @@ CREATE TABLE TresHautGradee(
 
 CREATE TABLE NomMachine(
    idNM VARCHAR2(50),
-   nomMachine VARCHAR2(20),
+   nomMachine VARCHAR2(40),
    PRIMARY KEY(idNM)
 );
 
 CREATE TABLE TypeEntretien(
    idE NUMBER(6),
-   typeEntretien VARCHAR2(20),
+   typeEntretien VARCHAR2(40),
    PRIMARY KEY(idE)
 );
 
@@ -93,10 +93,10 @@ CREATE TABLE Tenrac(
    idO NUMBER(6),
    numeroSiret CHAR(14),
    idT NUMBER(6),
-   nomTenrac VARCHAR2(20),
+   nomTenrac VARCHAR2(40),
    courrier VARCHAR2(50),
    telephone CHAR(13),
-   adressePostal VARCHAR2(20),
+   adressePostal VARCHAR2(30),
    idG NUMBER(6) NOT NULL,
    idTi NUMBER(6),
    idD NUMBER(6),
@@ -112,15 +112,15 @@ CREATE TABLE Tenrac(
 
 CREATE TABLE Ordre(
    idO NUMBER(6),
-   nomOrdre VARCHAR2(20),
-   territoire VARCHAR2(20),
+   nomOrdre VARCHAR2(40),
+   territoire VARCHAR2(40),
    PRIMARY KEY(idO),
    FOREIGN KEY(idO) REFERENCES Organisation(idO)
 );
 
 CREATE TABLE Plat(
    idP NUMBER(6),
-   nomPlat VARCHAR2(20),
+   nomPlat VARCHAR2(40),
    idL NUMBER(6),
    PRIMARY KEY(idP),
    FOREIGN KEY(idL) REFERENCES Legume(idL)
@@ -128,7 +128,7 @@ CREATE TABLE Plat(
 
 CREATE TABLE AdressePartenaire(
    idA NUMBER(6),
-   adressePart VARCHAR2(30),
+   adressePart VARCHAR2(120),
    idO NUMBER(6) NOT NULL,
    PRIMARY KEY(idA),
    FOREIGN KEY(idO) REFERENCES Ordre(idO)
@@ -136,8 +136,8 @@ CREATE TABLE AdressePartenaire(
 
 CREATE TABLE Club(
    idO_1 NUMBER(6),
-   nomClub VARCHAR2(20),
-   adresseClub VARCHAR2(30),
+   nomClub VARCHAR2(40),
+   adresseClub VARCHAR2(120),
    idO NUMBER(6) NOT NULL,
    PRIMARY KEY(idO_1),
    FOREIGN KEY(idO_1) REFERENCES Organisation(idO),
@@ -156,7 +156,7 @@ CREATE TABLE Machine(
 CREATE TABLE Reunion(
    idReunion NUMBER(6),
    date_ DATE,
-   nomReunion VARCHAR2(20),
+   nomReunion VARCHAR2(40),
    idO NUMBER(6) NOT NULL,
    numeroSiret CHAR(14) NOT NULL,
    idT NUMBER(6) NOT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE Reunion(
 
 CREATE TABLE Repas(
    idR NUMBER(6),
-   intitule VARCHAR2(20),
+   intitule VARCHAR2(40),
    idM NUMBER(6) NOT NULL,
    PRIMARY KEY(idR),
    FOREIGN KEY(idM) REFERENCES Machine(idM)
@@ -193,7 +193,7 @@ CREATE TABLE Compose(
    FOREIGN KEY(idR) REFERENCES Repas(idR)
 );
 
-CREATE TABLE Consistue(
+CREATE TABLE Constitue(
    idP NUMBER(6),
    idA NUMBER(6),
    PRIMARY KEY(idP, idA),

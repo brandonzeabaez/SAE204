@@ -1,0 +1,1000 @@
+INSERT INTO Club VALUES(1,'Club pomme','4867 Perez Locks
+East Robin, ND 52632',1);
+INSERT INTO Club VALUES(2,'Le Grand pomme','35742 Brenda Motorway Suite 335
+Stephaniefurt, ND 43389',2);
+INSERT INTO Club VALUES(3,'Supremepomme','81988 George Valleys Suite 232
+Jessicaville, DE 79751',3);
+INSERT INTO Club VALUES(4,'Doner pomme','51784 Meyers Causeway
+West Williamfort, PW 69232',4);
+INSERT INTO Club VALUES(5,'Raclette suprême de pomme','528 Gabrielle Hollow Apt. 041
+Carpenterville, NE 20187',5);
+INSERT INTO Club VALUES(6,'Club banane','416 Susan Prairie Apt. 357
+Smithhaven, MH 04577',6);
+INSERT INTO Club VALUES(7,'Le Grand banane','765 Lindsey Wall Suite 474
+North Taylor, RI 83343',7);
+INSERT INTO Club VALUES(8,'Supremebanane','51480 Ford Viaduct Apt. 384
+Salazarborough, VT 29018',8);
+INSERT INTO Club VALUES(9,'Doner banane','2480 Ryan Shores Suite 002
+West Juanberg, KS 72951',9);
+INSERT INTO Club VALUES(10,'Raclette suprême de banane','1233 Wise Ville
+Mejiaville, IL 52027',10);
+INSERT INTO Club VALUES(11,'Club poire','93319 Brian Crossing
+Avilafort, DE 52345',11);
+INSERT INTO Club VALUES(12,'Le Grand poire','784 Flynn Groves Apt. 539
+Robertfort, OR 90912',12);
+INSERT INTO Club VALUES(13,'Supremepoire','2010 Harris Haven Suite 000
+Brandyborough, HI 58818',13);
+INSERT INTO Club VALUES(14,'Doner poire','7017 Antonio Stravenue Apt. 695
+Willietown, ID 00905',14);
+INSERT INTO Club VALUES(15,'Raclette suprême de poire','70635 Williamson Tunnel Apt. 958
+Melissamouth, AS 19982',15);
+INSERT INTO Club VALUES(16,'Club peche','98229 Christina Islands Apt. 886
+Amandashire, GU 25235',16);
+INSERT INTO Club VALUES(17,'Le Grand peche','421 Scott Skyway
+Jenningsfort, MA 24970',17);
+INSERT INTO Club VALUES(18,'Supremepeche','843 Kennedy Forges
+North Diamondchester, NJ 08064',18);
+INSERT INTO Club VALUES(19,'Doner peche','63210 Martinez Prairie Apt. 266
+North Sandramouth, WY 65714',19);
+INSERT INTO Club VALUES(20,'Raclette suprême de peche','09602 Jessica Viaduct Suite 417
+Lake Joseph, PA 35124',20);
+INSERT INTO Club VALUES(21,'Club abricot','2900 Thompson Dam Suite 267
+Brianside, VI 93820',21);
+INSERT INTO Club VALUES(22,'Le Grand abricot','04130 Patrick Locks Apt. 659
+Elliottside, VA 90599',22);
+INSERT INTO Club VALUES(23,'Supremeabricot','96508 Bishop Alley
+Tonyberg, VT 99437',23);
+INSERT INTO Club VALUES(24,'Doner abricot','88309 Phillips Terrace
+North Adamton, AR 81891',24);
+INSERT INTO Club VALUES(25,'Raclette suprême de abricot','601 Miranda Corners
+Nelsonstad, PW 60431',25);
+INSERT INTO Club VALUES(26,'Club ananas','Unit 1025 Box 0083
+DPO AA 16835',26);
+INSERT INTO Club VALUES(27,'Le Grand ananas','870 Leslie Green
+Joyceberg, VA 83720',27);
+INSERT INTO Club VALUES(28,'Supremeananas','12461 Andrea Falls Apt. 465
+Amandatown, VI 38939',28);
+INSERT INTO Club VALUES(29,'Doner ananas','060 Amber River
+Tinamouth, UT 32355',29);
+INSERT INTO Club VALUES(30,'Raclette suprême de ananas','PSC 7464, Box 4007
+APO AP 85993',30);
+INSERT INTO Club VALUES(31,'Club mangue','4852 Morris Summit Apt. 678
+Johnsonshire, WV 49933',31);
+INSERT INTO Club VALUES(32,'Le Grand mangue','USNS Taylor
+FPO AP 91503',32);
+INSERT INTO Club VALUES(33,'Suprememangue','6157 Thompson Island Suite 084
+Maysstad, CT 05181',33);
+INSERT INTO Club VALUES(34,'Doner mangue','69261 Mcdonald Springs
+East Cassandraland, MD 91838',34);
+INSERT INTO Club VALUES(35,'Raclette suprême de mangue','3801 Montgomery Circles
+East Adam, DC 69361',35);
+INSERT INTO Club VALUES(36,'Club fraise','34198 Johnson Trail
+New Chadchester, PR 09840',36);
+INSERT INTO Club VALUES(37,'Le Grand fraise','USCGC Stewart
+FPO AE 40790',37);
+INSERT INTO Club VALUES(38,'Supremefraise','96792 Hanna Isle Apt. 249
+South Joseph, MD 86422',38);
+INSERT INTO Club VALUES(39,'Doner fraise','189 Wright Station Apt. 012
+South Connor, IL 42833',39);
+INSERT INTO Club VALUES(40,'Raclette suprême de fraise','98216 Yang Creek Suite 415
+West Jessica, DC 98693',40);
+INSERT INTO Club VALUES(41,'Club framboise','68267 Daniel Trail Apt. 854
+Jacksonview, FL 98984',41);
+INSERT INTO Club VALUES(42,'Le Grand framboise','6108 Knox Dam Suite 204
+Bishopburgh, LA 71389',42);
+INSERT INTO Club VALUES(43,'Supremeframboise','Unit 4188 Box 9573
+DPO AA 95142',43);
+INSERT INTO Club VALUES(44,'Doner framboise','96319 Hickman Ferry
+West Nicholas, CT 90956',44);
+INSERT INTO Club VALUES(45,'Raclette suprême de framboise','44272 Lisa Ranch
+Holtfort, MD 37758',45);
+INSERT INTO Club VALUES(46,'Club cerise','24098 Mahoney Centers
+Port Ernest, VT 75803',46);
+INSERT INTO Club VALUES(47,'Le Grand cerise','6837 Robertson Fields
+Marychester, PW 03159',47);
+INSERT INTO Club VALUES(48,'Supremecerise','0109 Karen Rue Suite 548
+Griffithside, ND 57079',48);
+INSERT INTO Club VALUES(49,'Doner cerise','2498 Barnes Highway
+East Gary, FM 41320',49);
+INSERT INTO Club VALUES(50,'Raclette suprême de cerise','151 Jesse Square Suite 663
+South Christopherfort, PR 57919',50);
+INSERT INTO Club VALUES(51,'Club orange','561 Greer Plaza
+Vaughanshire, SC 68583',51);
+INSERT INTO Club VALUES(52,'Le Grand orange','66363 Peterson Shoals Apt. 986
+Chelseamouth, GU 03669',52);
+INSERT INTO Club VALUES(53,'Supremeorange','8850 Fisher Plaza Suite 841
+Cooperhaven, FM 14941',53);
+INSERT INTO Club VALUES(54,'Doner orange','99247 Diana Crossroad Suite 528
+Lake Thomas, OH 16208',54);
+INSERT INTO Club VALUES(55,'Raclette suprême de orange','70110 Morgan Trace
+New Amanda, PA 53880',55);
+INSERT INTO Club VALUES(56,'Club citron','57696 Joshua Pike
+Lake Jamesburgh, GA 83764',56);
+INSERT INTO Club VALUES(57,'Le Grand citron','USCGC Ingram
+FPO AP 32442',57);
+INSERT INTO Club VALUES(58,'Supremecitron','64172 Bobby Route
+Weeksshire, PA 92123',58);
+INSERT INTO Club VALUES(59,'Doner citron','46924 Bryan Circles
+Christinehaven, NJ 53428',59);
+INSERT INTO Club VALUES(60,'Raclette suprême de citron','03592 Owens Circle Apt. 916
+Jessicafurt, MI 76830',60);
+INSERT INTO Club VALUES(61,'Club pamplemousse','4551 Thomas Shoals
+Smithport, MS 67010',61);
+INSERT INTO Club VALUES(62,'Le Grand pamplemousse','9114 Solomon Forge Apt. 167
+Thomasfort, MA 54204',62);
+INSERT INTO Club VALUES(63,'Supremepamplemousse','0640 Jones Causeway
+Bakerfurt, SC 22829',63);
+INSERT INTO Club VALUES(64,'Doner pamplemousse','Unit 7427 Box 2125
+DPO AP 32320',64);
+INSERT INTO Club VALUES(65,'Raclette suprême de pamplemousse','159 John Locks
+Andreabury, DC 30073',65);
+INSERT INTO Club VALUES(66,'Club raisin','0540 Carson Inlet Suite 657
+North Katherine, PA 24803',66);
+INSERT INTO Club VALUES(67,'Le Grand raisin','448 Martinez Walk
+South Alan, FM 80452',67);
+INSERT INTO Club VALUES(68,'Supremeraisin','7168 Kathy Curve
+Jeremyville, DC 30717',68);
+INSERT INTO Club VALUES(69,'Doner raisin','284 Angela Isle Apt. 175
+Port Wendy, VI 41703',69);
+INSERT INTO Club VALUES(70,'Raclette suprême de raisin','333 Shelby Extension Apt. 356
+East Jacqueline, AR 81254',70);
+INSERT INTO Club VALUES(71,'Club melon','6955 Parker Groves
+New Mary, PA 18898',71);
+INSERT INTO Club VALUES(72,'Le Grand melon','272 Shirley Mills Apt. 157
+Michaelstad, AK 25852',72);
+INSERT INTO Club VALUES(73,'Suprememelon','63970 Ramirez Squares
+Lindsaytown, VA 37188',73);
+INSERT INTO Club VALUES(74,'Doner melon','80763 Carter Junctions
+Emilyshire, AR 62265',74);
+INSERT INTO Club VALUES(75,'Raclette suprême de melon','8362 Carpenter Ridges
+Port Heather, AZ 25213',75);
+INSERT INTO Club VALUES(76,'Club pasteque','86600 Matthews Harbor
+North Andrew, SC 99787',76);
+INSERT INTO Club VALUES(77,'Le Grand pasteque','12154 Prince Lodge
+Shannonberg, VI 73242',77);
+INSERT INTO Club VALUES(78,'Supremepasteque','2902 Crawford Rue Suite 516
+Masonview, TX 87184',78);
+INSERT INTO Club VALUES(79,'Doner pasteque','813 Bailey Viaduct Suite 847
+North Timothy, RI 39178',79);
+INSERT INTO Club VALUES(80,'Raclette suprême de pasteque','570 Wall Wells
+Port Hannah, CT 20820',80);
+INSERT INTO Club VALUES(81,'Club kiwi','0734 Meagan Lights
+Boothmouth, WA 26545',81);
+INSERT INTO Club VALUES(82,'Le Grand kiwi','794 Williams Falls Suite 883
+Gallowaymouth, WI 65996',82);
+INSERT INTO Club VALUES(83,'Supremekiwi','54313 Palmer Roads
+Michaelview, UT 28372',83);
+INSERT INTO Club VALUES(84,'Doner kiwi','Unit 0009 Box 5724
+DPO AE 43943',84);
+INSERT INTO Club VALUES(85,'Raclette suprême de kiwi','Unit 5164 Box 3286
+DPO AA 32026',85);
+INSERT INTO Club VALUES(86,'Club prune','84138 Charles Walk Apt. 702
+West Dana, AS 81532',86);
+INSERT INTO Club VALUES(87,'Le Grand prune','363 Tiffany Circles Apt. 259
+North Kevin, OK 83300',87);
+INSERT INTO Club VALUES(88,'Supremeprune','5920 Kim Prairie Apt. 271
+Lake Janeton, FM 75496',88);
+INSERT INTO Club VALUES(89,'Doner prune','239 Bishop Pass
+East Brooke, NC 88934',89);
+INSERT INTO Club VALUES(90,'Raclette suprême de prune','28215 Hall Lakes Suite 427
+North Amy, WA 45964',90);
+INSERT INTO Club VALUES(91,'Club figue','44858 Henson Burgs Suite 086
+Smithtown, MS 85651',91);
+INSERT INTO Club VALUES(92,'Le Grand figue','89528 Nash Route
+Port Johntown, MN 43699',92);
+INSERT INTO Club VALUES(93,'Supremefigue','7083 Logan Rue
+New Kaylaberg, AL 77692',93);
+INSERT INTO Club VALUES(94,'Doner figue','227 Short Lights
+New Christopher, TN 42184',94);
+INSERT INTO Club VALUES(95,'Raclette suprême de figue','803 Joseph Ports Suite 842
+North Melissafort, DC 15343',95);
+INSERT INTO Club VALUES(96,'Club datte','674 Jeff Harbor Apt. 874
+Pittsstad, VI 32162',96);
+INSERT INTO Club VALUES(97,'Le Grand datte','Unit 6725 Box 8217
+DPO AE 72129',97);
+INSERT INTO Club VALUES(98,'Supremedatte','24971 Johnson Cliffs Suite 824
+North Davidburgh, NH 94723',98);
+INSERT INTO Club VALUES(99,'Doner datte','028 Meyer Points
+New Kathy, IA 19323',99);
+INSERT INTO Club VALUES(100,'Raclette suprême de datte','584 Jose Forks
+North Curtis, LA 45830',100);
+INSERT INTO Club VALUES(101,'Club riz','16161 Barnett Court
+Port Kimberly, AZ 73106',101);
+INSERT INTO Club VALUES(102,'Le Grand riz','19164 William Islands
+New Cynthia, AK 06847',1);
+INSERT INTO Club VALUES(103,'Supremeriz','808 Billy Groves Suite 270
+Kingbury, MD 58935',2);
+INSERT INTO Club VALUES(104,'Doner riz','33240 Luke Gateway
+South Sarah, MD 49791',3);
+INSERT INTO Club VALUES(105,'Raclette suprême de riz','USCGC Howard
+FPO AA 66928',4);
+INSERT INTO Club VALUES(106,'Club pates','6309 Timothy Cove
+Kaylaberg, WI 92105',5);
+INSERT INTO Club VALUES(107,'Le Grand pates','615 James Circle Apt. 714
+Lake Frank, WI 26713',6);
+INSERT INTO Club VALUES(108,'Supremepates','23185 Jennifer Forest
+Port Samanthatown, ID 06547',7);
+INSERT INTO Club VALUES(109,'Doner pates','71884 Alexander Cliffs
+Vargaschester, UT 20752',8);
+INSERT INTO Club VALUES(110,'Raclette suprême de pates','50182 Mcbride Loop
+Port Karen, TN 18226',9);
+INSERT INTO Club VALUES(111,'Club pain','12986 Thomas Inlet Apt. 963
+Lake Todd, PW 83892',10);
+INSERT INTO Club VALUES(112,'Le Grand pain','007 Garcia Alley
+Jennifermouth, UT 40669',11);
+INSERT INTO Club VALUES(113,'Supremepain','8746 Williams Wells Suite 101
+Nicoleborough, WA 16652',12);
+INSERT INTO Club VALUES(114,'Doner pain','487 Cole Center
+Martinmouth, AS 07209',13);
+INSERT INTO Club VALUES(115,'Raclette suprême de pain','875 Cynthia Valleys
+Acostafort, OR 79987',14);
+INSERT INTO Club VALUES(116,'Club semoule','PSC 3381, Box 5604
+APO AP 74084',15);
+INSERT INTO Club VALUES(117,'Le Grand semoule','179 Todd Manor
+North Davidberg, UT 79338',16);
+INSERT INTO Club VALUES(118,'Supremesemoule','1301 Angela Neck Apt. 050
+Lake Aliciamouth, NY 30063',17);
+INSERT INTO Club VALUES(119,'Doner semoule','30380 Malone Fall
+Samuelport, AK 01420',18);
+INSERT INTO Club VALUES(120,'Raclette suprême de semoule','843 Chad Extensions
+Coopershire, OH 66961',19);
+INSERT INTO Club VALUES(121,'Club quinoa','0946 Barton Stravenue Apt. 471
+Colleenview, TX 17530',20);
+INSERT INTO Club VALUES(122,'Le Grand quinoa','14734 Sean Isle Suite 315
+Port Brittanyfurt, WV 57866',21);
+INSERT INTO Club VALUES(123,'Supremequinoa','547 Jimenez Motorway
+East Manuelmouth, CA 91744',22);
+INSERT INTO Club VALUES(124,'Doner quinoa','9837 Tammy Trafficway Apt. 523
+Walshport, NC 67188',23);
+INSERT INTO Club VALUES(125,'Raclette suprême de quinoa','133 Brown Mill
+Port Ryan, VI 21804',24);
+INSERT INTO Club VALUES(126,'Club avoine','0903 Deanna Coves Apt. 195
+South Sarah, NE 62227',25);
+INSERT INTO Club VALUES(127,'Le Grand avoine','1531 Robbins Drive Suite 787
+Arroyobury, ME 09936',26);
+INSERT INTO Club VALUES(128,'Supremeavoine','68903 Jones Keys
+South Daniel, PR 10329',27);
+INSERT INTO Club VALUES(129,'Doner avoine','89500 Washington Garden
+Melissaburgh, TN 30135',28);
+INSERT INTO Club VALUES(130,'Raclette suprême de avoine','0434 Christina Stravenue
+North Robin, TX 79538',29);
+INSERT INTO Club VALUES(131,'Club ble','412 Becker Crescent Apt. 713
+North Robin, TN 25537',30);
+INSERT INTO Club VALUES(132,'Le Grand ble','388 Doyle Glen Suite 714
+Jacksonstad, LA 51396',31);
+INSERT INTO Club VALUES(133,'Supremeble','6750 Courtney Island Suite 531
+North Melanie, IA 55694',32);
+INSERT INTO Club VALUES(134,'Doner ble','181 Porter Path
+New Joseph, NY 13929',33);
+INSERT INTO Club VALUES(135,'Raclette suprême de ble','0178 Wilson Tunnel
+East Elizabeth, PA 21341',34);
+INSERT INTO Club VALUES(136,'Club mais','90485 Melinda Coves
+Manuelmouth, DE 57800',35);
+INSERT INTO Club VALUES(137,'Le Grand mais','7925 Campbell Pine
+Longburgh, AK 79414',36);
+INSERT INTO Club VALUES(138,'Suprememais','PSC 4664, Box 8575
+APO AP 86953',37);
+INSERT INTO Club VALUES(139,'Doner mais','8591 Cheryl Inlet
+East Elizabethborough, OK 05717',38);
+INSERT INTO Club VALUES(140,'Raclette suprême de mais','999 Barnes Neck Apt. 093
+Antoniofurt, ME 31526',39);
+INSERT INTO Club VALUES(141,'Club farine','5115 George Motorway Apt. 504
+North Jacob, CO 61105',40);
+INSERT INTO Club VALUES(142,'Le Grand farine','15344 Corey Throughway
+Andersonside, GU 12512',41);
+INSERT INTO Club VALUES(143,'Supremefarine','USS Johnson
+FPO AP 73235',42);
+INSERT INTO Club VALUES(144,'Doner farine','960 Heather Plains Suite 539
+Jamesburgh, IL 62577',43);
+INSERT INTO Club VALUES(145,'Raclette suprême de farine','4016 Tyler Fords Apt. 512
+East Shannonside, FL 52054',44);
+INSERT INTO Club VALUES(146,'Club couscous','95715 Sparks Curve Apt. 223
+South Michael, FL 40548',45);
+INSERT INTO Club VALUES(147,'Le Grand couscous','USNS Campbell
+FPO AA 37718',46);
+INSERT INTO Club VALUES(148,'Supremecouscous','1905 Palmer Route Apt. 202
+North Brad, MI 92108',47);
+INSERT INTO Club VALUES(149,'Doner couscous','340 Gray Neck Suite 138
+Joshualand, MS 84822',48);
+INSERT INTO Club VALUES(150,'Raclette suprême de couscous','5306 Cordova Prairie Suite 196
+North Linda, MT 19756',49);
+INSERT INTO Club VALUES(151,'Club poulet','60330 Macias Club Suite 622
+Brownmouth, HI 71329',50);
+INSERT INTO Club VALUES(152,'Le Grand poulet','7186 Curry View
+New Kirkborough, VI 15787',51);
+INSERT INTO Club VALUES(153,'Supremepoulet','64766 Davis Mountain
+Brookschester, IA 09831',52);
+INSERT INTO Club VALUES(154,'Doner poulet','USS Rodriguez
+FPO AE 34858',53);
+INSERT INTO Club VALUES(155,'Raclette suprême de poulet','9242 James Islands Suite 911
+West Laura, PA 84011',54);
+INSERT INTO Club VALUES(156,'Club boeuf','26544 Laura Landing Apt. 575
+New Marieton, KS 14225',55);
+INSERT INTO Club VALUES(157,'Le Grand boeuf','70728 Adams Crest
+Jessicaburgh, UT 48716',56);
+INSERT INTO Club VALUES(158,'Supremeboeuf','90875 Johns Drive Suite 747
+Salazarville, OR 59549',57);
+INSERT INTO Club VALUES(159,'Doner boeuf','740 Russell Street
+Mcbridestad, IN 28122',58);
+INSERT INTO Club VALUES(160,'Raclette suprême de boeuf','3923 Shea Mews
+Vegaport, WI 10841',59);
+INSERT INTO Club VALUES(161,'Club porc','3817 Jesse Forge
+Johnsonberg, NH 41898',60);
+INSERT INTO Club VALUES(162,'Le Grand porc','4991 Chan Roads Suite 907
+Lake David, UT 85045',61);
+INSERT INTO Club VALUES(163,'Supremeporc','6584 Smith Place
+North Kathrynchester, MI 74407',62);
+INSERT INTO Club VALUES(164,'Doner porc','759 Jason Vista Apt. 484
+East Steven, NJ 38890',63);
+INSERT INTO Club VALUES(165,'Raclette suprême de porc','95365 Rachel Pass Apt. 690
+New Kevinfort, OR 86016',64);
+INSERT INTO Club VALUES(166,'Club agneau','397 Rebekah Causeway
+Port Dwaynebury, IA 85662',65);
+INSERT INTO Club VALUES(167,'Le Grand agneau','571 Paul Greens Apt. 873
+East Paulport, NY 40419',66);
+INSERT INTO Club VALUES(168,'Supremeagneau','832 Barbara Viaduct
+Brownberg, PA 34719',67);
+INSERT INTO Club VALUES(169,'Doner agneau','8784 Jones Heights Suite 769
+North Carly, VI 42243',68);
+INSERT INTO Club VALUES(170,'Raclette suprême de agneau','551 Hinton Expressway Suite 300
+Holtland, MT 23957',69);
+INSERT INTO Club VALUES(171,'Club dinde','Unit 0066 Box 8852
+DPO AE 72738',70);
+INSERT INTO Club VALUES(172,'Le Grand dinde','31153 Henry Alley
+New Michaelfort, GU 25197',71);
+INSERT INTO Club VALUES(173,'Supremedinde','062 Parker Drive Apt. 794
+Ericmouth, AZ 40795',72);
+INSERT INTO Club VALUES(174,'Doner dinde','26802 Thompson Terrace Apt. 572
+Thomasfort, UT 05769',73);
+INSERT INTO Club VALUES(175,'Raclette suprême de dinde','1626 Gary Mills
+Westfurt, HI 54998',74);
+INSERT INTO Club VALUES(176,'Club canard','147 Wendy Ranch Suite 831
+South Johnny, NH 21789',75);
+INSERT INTO Club VALUES(177,'Le Grand canard','907 Philip Ports
+East John, WA 75155',76);
+INSERT INTO Club VALUES(178,'Supremecanard','9872 Lisa Curve Suite 833
+North Robertview, MD 12807',77);
+INSERT INTO Club VALUES(179,'Doner canard','706 Hoover Oval Suite 087
+South Michaelfort, MH 15212',78);
+INSERT INTO Club VALUES(180,'Raclette suprême de canard','62815 Parrish Turnpike Apt. 568
+West Johnfurt, WV 73294',79);
+INSERT INTO Club VALUES(181,'Club steak','6009 Paul Square
+South Robert, AR 33315',80);
+INSERT INTO Club VALUES(182,'Le Grand steak','194 Pamela Plains Apt. 063
+Thomasport, PW 50170',81);
+INSERT INTO Club VALUES(183,'Supremesteak','PSC 5788, Box 3024
+APO AP 02309',82);
+INSERT INTO Club VALUES(184,'Doner steak','USCGC Jackson
+FPO AE 90426',83);
+INSERT INTO Club VALUES(185,'Raclette suprême de steak','439 Carolyn Green
+Port Anaside, NM 87321',84);
+INSERT INTO Club VALUES(186,'Club jambon','261 Henderson Square Suite 425
+South Michele, SD 70413',85);
+INSERT INTO Club VALUES(187,'Le Grand jambon','901 Francis Flats Suite 157
+Lake Petermouth, MO 85923',86);
+INSERT INTO Club VALUES(188,'Supremejambon','PSC 6056, Box 9237
+APO AP 24983',87);
+INSERT INTO Club VALUES(189,'Doner jambon','894 Rachel Haven
+East David, SD 48117',88);
+INSERT INTO Club VALUES(190,'Raclette suprême de jambon','USNV Collins
+FPO AE 15809',89);
+INSERT INTO Club VALUES(191,'Club saucisse','148 Brian Wells Suite 944
+North Tiffanyfurt, NC 81162',90);
+INSERT INTO Club VALUES(192,'Le Grand saucisse','7349 Alicia Lodge
+East Brooke, KY 61962',91);
+INSERT INTO Club VALUES(193,'Supremesaucisse','0791 Angela Mountains
+Goldentown, MA 11576',92);
+INSERT INTO Club VALUES(194,'Doner saucisse','2548 Jordan Heights Apt. 915
+Hamiltonburgh, AR 56277',93);
+INSERT INTO Club VALUES(195,'Raclette suprême de saucisse','8396 Lawrence Light
+Lake Brian, MI 10396',94);
+INSERT INTO Club VALUES(196,'Club lardon','1684 Blackburn Loop Apt. 822
+Joanneland, KS 17714',95);
+INSERT INTO Club VALUES(197,'Le Grand lardon','67852 Melinda Key Suite 601
+Adkinsstad, NY 40306',96);
+INSERT INTO Club VALUES(198,'Supremelardon','0468 Price Fort
+South Lisa, DE 06704',97);
+INSERT INTO Club VALUES(199,'Doner lardon','07365 Nathan Harbors
+North Dwayneton, IA 32468',98);
+INSERT INTO Club VALUES(200,'Raclette suprême de lardon','0818 King Avenue Apt. 221
+Vegahaven, DE 19161',99);
+INSERT INTO Club VALUES(201,'Club saumon','29197 Sandoval Forge Suite 213
+East Jenniferport, SC 13793',100);
+INSERT INTO Club VALUES(202,'Le Grand saumon','090 Franco Plaza Suite 153
+Warrenmouth, CA 72347',101);
+INSERT INTO Club VALUES(203,'Supremesaumon','00019 Cynthia Hollow
+Ericksonport, LA 44101',1);
+INSERT INTO Club VALUES(204,'Doner saumon','398 Sharon Plains Apt. 512
+West Kimberlyton, IA 97493',2);
+INSERT INTO Club VALUES(205,'Raclette suprême de saumon','946 Cross Underpass
+Margaretmouth, AR 16272',3);
+INSERT INTO Club VALUES(206,'Club thon','91956 Brian Village Suite 400
+Lake Melinda, IN 43839',4);
+INSERT INTO Club VALUES(207,'Le Grand thon','79714 Gregory Green
+Geraldbury, TN 87036',5);
+INSERT INTO Club VALUES(208,'Supremethon','2609 Courtney Ranch Apt. 214
+Davischester, SC 34756',6);
+INSERT INTO Club VALUES(209,'Doner thon','07583 George Crest
+Lake Angelica, NM 62381',7);
+INSERT INTO Club VALUES(210,'Raclette suprême de thon','210 James Crest
+South Nathanielland, NJ 84955',8);
+INSERT INTO Club VALUES(211,'Club cabillaud','5171 David Ports
+West Carlport, IL 32546',9);
+INSERT INTO Club VALUES(212,'Le Grand cabillaud','9107 Crystal Hill
+West Joe, CO 99243',10);
+INSERT INTO Club VALUES(213,'Supremecabillaud','4526 Morris Brook
+East Daniel, AZ 85883',11);
+INSERT INTO Club VALUES(214,'Doner cabillaud','3505 Wilson Hills
+Lake Dustin, MI 37225',12);
+INSERT INTO Club VALUES(215,'Raclette suprême de cabillaud','3777 Cindy Unions
+East Julia, AZ 19762',13);
+INSERT INTO Club VALUES(216,'Club sardine','32935 Javier Neck
+Lake Jameschester, NJ 67925',14);
+INSERT INTO Club VALUES(217,'Le Grand sardine','55685 April Meadows Suite 887
+Dorseyport, AS 61576',15);
+INSERT INTO Club VALUES(218,'Supremesardine','18128 Kevin Neck Apt. 343
+West Richardtown, MI 14541',16);
+INSERT INTO Club VALUES(219,'Doner sardine','2701 Jonathan Inlet Apt. 670
+New Codyville, DC 05155',17);
+INSERT INTO Club VALUES(220,'Raclette suprême de sardine','7121 Sanders Freeway
+Ryanmouth, ME 94125',18);
+INSERT INTO Club VALUES(221,'Club maquereau','50991 Watkins Garden Suite 214
+New Joseph, MI 75873',19);
+INSERT INTO Club VALUES(222,'Le Grand maquereau','4065 Christopher Light
+Martinmouth, CO 55657',20);
+INSERT INTO Club VALUES(223,'Suprememaquereau','1417 Theodore Highway
+Philipside, MO 95428',21);
+INSERT INTO Club VALUES(224,'Doner maquereau','Unit 3922 Box 6688
+DPO AA 16574',22);
+INSERT INTO Club VALUES(225,'Raclette suprême de maquereau','16529 Samuel Way Suite 867
+Garrettview, IA 68422',23);
+INSERT INTO Club VALUES(226,'Club truite','PSC 6742, Box 4832
+APO AA 42302',24);
+INSERT INTO Club VALUES(227,'Le Grand truite','061 Barbara Road
+Haleville, OH 68962',25);
+INSERT INTO Club VALUES(228,'Supremetruite','61791 White Drive
+Juanton, NH 89369',26);
+INSERT INTO Club VALUES(229,'Doner truite','Unit 8769 Box 4469
+DPO AA 69946',27);
+INSERT INTO Club VALUES(230,'Raclette suprême de truite','PSC 2098, Box 8071
+APO AP 69882',28);
+INSERT INTO Club VALUES(231,'Club crevettes','USNV Phillips
+FPO AE 69958',29);
+INSERT INTO Club VALUES(232,'Le Grand crevettes','8631 Jackson Roads
+Isabellaland, VT 33664',30);
+INSERT INTO Club VALUES(233,'Supremecrevettes','2327 Deanna Stravenue
+Adamview, HI 45830',31);
+INSERT INTO Club VALUES(234,'Doner crevettes','PSC 4994, Box 9234
+APO AP 66924',32);
+INSERT INTO Club VALUES(235,'Raclette suprême de crevettes','398 Thompson Square Apt. 896
+Jacksonville, TX 99316',33);
+INSERT INTO Club VALUES(236,'Club moules','4407 Ricardo Stravenue
+Andersenhaven, MD 79736',34);
+INSERT INTO Club VALUES(237,'Le Grand moules','431 Dwayne Haven Suite 958
+East Rogerstad, PA 08951',35);
+INSERT INTO Club VALUES(238,'Suprememoules','1386 Robert Port
+West Carrieburgh, IL 90928',36);
+INSERT INTO Club VALUES(239,'Doner moules','434 Wright Stream Apt. 532
+Lake Justinville, WA 47905',37);
+INSERT INTO Club VALUES(240,'Raclette suprême de moules','98130 Karen Stream
+Port Kerry, GU 79740',38);
+INSERT INTO Club VALUES(241,'Club huitres','5537 Swanson Extensions Apt. 479
+East William, MD 17929',39);
+INSERT INTO Club VALUES(242,'Le Grand huitres','Unit 8190 Box 8471
+DPO AA 57275',40);
+INSERT INTO Club VALUES(243,'Supremehuitres','60827 Peterson Coves
+East Victor, CA 67357',41);
+INSERT INTO Club VALUES(244,'Doner huitres','2968 Molly Spur Suite 892
+West Nathanielmouth, WA 33373',42);
+INSERT INTO Club VALUES(245,'Raclette suprême de huitres','USS Jones
+FPO AA 20816',43);
+INSERT INTO Club VALUES(246,'Club crabe','765 Daniel Roads Suite 064
+Christopherburgh, MS 34664',44);
+INSERT INTO Club VALUES(247,'Le Grand crabe','247 King Corner Apt. 435
+Brownland, VI 64209',45);
+INSERT INTO Club VALUES(248,'Supremecrabe','9795 Aaron Oval
+Ramirezmouth, AL 51707',46);
+INSERT INTO Club VALUES(249,'Doner crabe','205 Joshua Drive
+New Courtney, FL 36326',47);
+INSERT INTO Club VALUES(250,'Raclette suprême de crabe','623 Wilson Tunnel Apt. 533
+Port Madisonfort, VI 09307',48);
+INSERT INTO Club VALUES(251,'Club oeuf','17700 Nelson Gardens Apt. 917
+Tristanchester, GU 36933',49);
+INSERT INTO Club VALUES(252,'Le Grand oeuf','0749 Galloway Highway Suite 589
+East Sean, WI 39445',50);
+INSERT INTO Club VALUES(253,'Supremeoeuf','6828 Peter Lake Suite 325
+Alanburgh, MO 80369',51);
+INSERT INTO Club VALUES(254,'Doner oeuf','2921 Teresa Fords Suite 732
+Bowmanmouth, WY 69733',52);
+INSERT INTO Club VALUES(255,'Raclette suprême de oeuf','380 Amanda Pike
+Dianeview, MN 57282',53);
+INSERT INTO Club VALUES(256,'Club lait','58718 Reynolds Freeway
+Port Calvinshire, MA 56797',54);
+INSERT INTO Club VALUES(257,'Le Grand lait','451 Eric Motorway Suite 666
+South Jacobland, VI 89391',55);
+INSERT INTO Club VALUES(258,'Supremelait','2778 Moran Trace
+North Jonathan, MO 34235',56);
+INSERT INTO Club VALUES(259,'Doner lait','1554 Alice Skyway Apt. 147
+Ramirezside, DC 96996',57);
+INSERT INTO Club VALUES(260,'Raclette suprême de lait','7728 John Knolls
+Staceyborough, WA 35029',58);
+INSERT INTO Club VALUES(261,'Club fromage','23751 Young Walks Apt. 403
+East Kristopher, IA 73656',59);
+INSERT INTO Club VALUES(262,'Le Grand fromage','3692 Jorge Skyway
+Port Laurenville, AR 48509',60);
+INSERT INTO Club VALUES(263,'Supremefromage','99457 White Park
+New Kylebury, AS 13812',61);
+INSERT INTO Club VALUES(264,'Doner fromage','PSC 7233, Box 1165
+APO AE 12412',62);
+INSERT INTO Club VALUES(265,'Raclette suprême de fromage','05105 Shane Vista
+Lake Jamiebury, MT 67162',63);
+INSERT INTO Club VALUES(266,'Club yaourt','989 Joseph Spring
+Port Vanessachester, AR 97751',64);
+INSERT INTO Club VALUES(267,'Le Grand yaourt','720 Elizabeth View
+Port Troyborough, MT 87310',65);
+INSERT INTO Club VALUES(268,'Supremeyaourt','2258 Hill Forest
+Justinshire, UT 72480',66);
+INSERT INTO Club VALUES(269,'Doner yaourt','8859 Karen Stravenue
+Coxshire, GU 48480',67);
+INSERT INTO Club VALUES(270,'Raclette suprême de yaourt','08934 Jessica Radial Suite 080
+Johnsonside, NV 98276',68);
+INSERT INTO Club VALUES(271,'Club beurre','24203 Kimberly Cliff
+Lawsonport, OK 73667',69);
+INSERT INTO Club VALUES(272,'Le Grand beurre','18298 Sean Inlet Suite 085
+Diazhaven, CT 67395',70);
+INSERT INTO Club VALUES(273,'Supremebeurre','19334 Renee Branch
+Andrewville, GU 08563',71);
+INSERT INTO Club VALUES(274,'Doner beurre','25176 Tamara Ranch Suite 696
+Littleburgh, NY 85541',72);
+INSERT INTO Club VALUES(275,'Raclette suprême de beurre','52401 Brandon Mountain Apt. 766
+Richardhaven, MA 13629',73);
+INSERT INTO Club VALUES(276,'Club creme','249 Timothy Valley Suite 047
+Michellemouth, ID 57087',74);
+INSERT INTO Club VALUES(277,'Le Grand creme','41446 Leblanc Spring Apt. 785
+Nicolefurt, DE 11502',75);
+INSERT INTO Club VALUES(278,'Supremecreme','335 Moreno Corners
+Spencershire, PA 98597',76);
+INSERT INTO Club VALUES(279,'Doner creme','58342 Arthur Drives Apt. 074
+Port Ronnieside, DE 73648',77);
+INSERT INTO Club VALUES(280,'Raclette suprême de creme','716 Norton Club
+East Kathleenberg, VI 91068',78);
+INSERT INTO Club VALUES(281,'Club glace','74812 Jason Views Suite 320
+Mcgrathberg, CA 35529',79);
+INSERT INTO Club VALUES(282,'Le Grand glace','9740 Crystal Tunnel
+Parkerfurt, CT 37761',80);
+INSERT INTO Club VALUES(283,'Supremeglace','7156 Horne Parkways
+Danielsburgh, IN 74002',81);
+INSERT INTO Club VALUES(284,'Doner glace','9020 Pamela Mountains Apt. 768
+New Melissa, PR 36454',82);
+INSERT INTO Club VALUES(285,'Raclette suprême de glace','891 Sean Creek Apt. 433
+Greenside, KY 70343',83);
+INSERT INTO Club VALUES(286,'Club lait_condense','04173 Russo Island Apt. 021
+Denisetown, MN 37106',84);
+INSERT INTO Club VALUES(287,'Le Grand lait_condense','236 Ortiz Parks
+Leeton, MH 53318',85);
+INSERT INTO Club VALUES(288,'Supremelait_condense','6121 Morris Village Suite 885
+Monicafurt, FL 04839',86);
+INSERT INTO Club VALUES(289,'Doner lait_condense','39127 Bryant Valleys
+Lake Michael, NC 95022',87);
+INSERT INTO Club VALUES(290,'Raclette suprême de lait_condense','372 Caldwell Turnpike Apt. 313
+Perrymouth, IL 54078',88);
+INSERT INTO Club VALUES(291,'Club lait poudre','1432 Alison Streets Suite 509
+New Ashley, UT 12417',89);
+INSERT INTO Club VALUES(292,'Le Grand lait poudre','6937 Sara Crest
+Gonzalestown, NM 14917',90);
+INSERT INTO Club VALUES(293,'Supremelait poudre','429 Lester Mount Suite 501
+Robertmouth, AL 64239',91);
+INSERT INTO Club VALUES(294,'Doner lait poudre','76862 Byrd Row Suite 439
+South Oliviaburgh, MH 96087',92);
+INSERT INTO Club VALUES(295,'Raclette suprême de lait poudre','3114 Steven Underpass
+West Jeffrey, MP 91702',93);
+INSERT INTO Club VALUES(296,'Club mozzarella','2991 Mcbride Key
+North Patricia, NC 76500',94);
+INSERT INTO Club VALUES(297,'Le Grand mozzarella','5195 Becker Club Suite 051
+Port Garyberg, MS 54355',95);
+INSERT INTO Club VALUES(298,'Suprememozzarella','USS Peterson
+FPO AA 28200',96);
+INSERT INTO Club VALUES(299,'Doner mozzarella','162 Floyd Street
+Millerview, AR 89859',97);
+INSERT INTO Club VALUES(300,'Raclette suprême de mozzarella','5873 Michael Springs Suite 517
+Johnchester, PA 26143',98);
+INSERT INTO Club VALUES(301,'Club chocolat','123 Sanders Knolls
+New Josemouth, OR 86787',99);
+INSERT INTO Club VALUES(302,'Le Grand chocolat','15238 Cassandra Canyon
+Willischester, VA 22429',100);
+INSERT INTO Club VALUES(303,'Supremechocolat','770 Kelli Turnpike
+Port Sarah, IA 53765',101);
+INSERT INTO Club VALUES(304,'Doner chocolat','09710 Ward Keys Apt. 271
+Briannaberg, AS 22231',1);
+INSERT INTO Club VALUES(305,'Raclette suprême de chocolat','795 Elliott Centers Apt. 053
+East Brittany, IA 05741',2);
+INSERT INTO Club VALUES(306,'Club sucre','283 Eric Springs Suite 148
+East Jill, NJ 90233',3);
+INSERT INTO Club VALUES(307,'Le Grand sucre','04652 Kimberly Ridge Apt. 494
+East Carrie, LA 69711',4);
+INSERT INTO Club VALUES(308,'Supremesucre','617 Serrano Hill
+New Cassandrafurt, FL 26726',5);
+INSERT INTO Club VALUES(309,'Doner sucre','015 Alexis Curve
+Ronaldhaven, MT 46893',6);
+INSERT INTO Club VALUES(310,'Raclette suprême de sucre','9547 Montgomery Crossing
+Norrischester, MA 37471',7);
+INSERT INTO Club VALUES(311,'Club miel','1095 Wanda Brooks Apt. 573
+Knightland, MI 21697',8);
+INSERT INTO Club VALUES(312,'Le Grand miel','4114 Wesley Locks
+South Maryside, NY 01104',9);
+INSERT INTO Club VALUES(313,'Suprememiel','162 Danielle Camp Apt. 187
+Michaelfort, AR 19369',10);
+INSERT INTO Club VALUES(314,'Doner miel','1151 Brennan Street
+Hortonchester, LA 35298',11);
+INSERT INTO Club VALUES(315,'Raclette suprême de miel','779 Dennis Estates
+Webbstad, MP 71206',12);
+INSERT INTO Club VALUES(316,'Club confiture','89237 Robert Lodge
+Josephside, KS 62040',13);
+INSERT INTO Club VALUES(317,'Le Grand confiture','8700 Maynard Road Suite 136
+Vasquezberg, MT 93232',14);
+INSERT INTO Club VALUES(318,'Supremeconfiture','73866 James Keys
+Elizabethville, IL 88606',15);
+INSERT INTO Club VALUES(319,'Doner confiture','5694 Adam Hollow
+Port Nancy, AR 37012',16);
+INSERT INTO Club VALUES(320,'Raclette suprême de confiture','54099 John Forks
+Wilkinsonburgh, WA 60746',17);
+INSERT INTO Club VALUES(321,'Club nutella','008 Ward Roads Apt. 302
+Olsonton, MP 45944',18);
+INSERT INTO Club VALUES(322,'Le Grand nutella','886 Cheyenne Station Apt. 325
+South Valerieshire, NC 56938',19);
+INSERT INTO Club VALUES(323,'Supremenutella','470 Shawn Ports
+West Bobby, NY 44834',20);
+INSERT INTO Club VALUES(324,'Doner nutella','6406 Paul Brooks
+New Crystal, VI 93239',21);
+INSERT INTO Club VALUES(325,'Raclette suprême de nutella','172 Edward Crescent Apt. 502
+South Ashley, IA 94227',22);
+INSERT INTO Club VALUES(326,'Club caramel','95306 Hill Island
+Robinsonport, GA 38221',23);
+INSERT INTO Club VALUES(327,'Le Grand caramel','4113 Jenkins Port Suite 375
+Grahamtown, GA 93832',24);
+INSERT INTO Club VALUES(328,'Supremecaramel','5351 Kimberly Rapid
+Michaelberg, PW 84516',25);
+INSERT INTO Club VALUES(329,'Doner caramel','61035 Zachary Trail
+Courtneyberg, LA 93491',26);
+INSERT INTO Club VALUES(330,'Raclette suprême de caramel','02683 Velasquez Park Suite 662
+Lake Cindyport, CO 29723',27);
+INSERT INTO Club VALUES(331,'Club biscuit','1786 Anthony Shores Suite 528
+New Joshua, GU 50568',28);
+INSERT INTO Club VALUES(332,'Le Grand biscuit','USNV Nichols
+FPO AE 38591',29);
+INSERT INTO Club VALUES(333,'Supremebiscuit','486 Jonathon Union Suite 003
+Lake Erinberg, AK 97972',30);
+INSERT INTO Club VALUES(334,'Doner biscuit','2776 Ashley Path
+South Anna, OK 03911',31);
+INSERT INTO Club VALUES(335,'Raclette suprême de biscuit','811 Howell Valleys Apt. 827
+North Williamchester, FL 49232',32);
+INSERT INTO Club VALUES(336,'Club gateau','96038 Thompson Trafficway
+North Jonathan, TN 56899',33);
+INSERT INTO Club VALUES(337,'Le Grand gateau','Unit 6417 Box 1910
+DPO AA 15161',34);
+INSERT INTO Club VALUES(338,'Supremegateau','451 Michael Walk
+Lindseyhaven, RI 73416',35);
+INSERT INTO Club VALUES(339,'Doner gateau','39344 Michelle Pine
+Escobarport, OH 64345',36);
+INSERT INTO Club VALUES(340,'Raclette suprême de gateau','68633 Yu Mountains
+Stevenburgh, SC 92008',37);
+INSERT INTO Club VALUES(341,'Club tarte','04535 Obrien Isle Apt. 086
+Reedshire, PR 41418',38);
+INSERT INTO Club VALUES(342,'Le Grand tarte','834 Anderson Shoals Suite 163
+Joanfurt, MD 12858',39);
+INSERT INTO Club VALUES(343,'Supremetarte','9185 Austin Lodge Suite 900
+Harmonberg, PW 60538',40);
+INSERT INTO Club VALUES(344,'Doner tarte','92466 Reed Meadow Suite 524
+New Justinton, HI 83721',41);
+INSERT INTO Club VALUES(345,'Raclette suprême de tarte','634 Perez Flats Apt. 742
+Antoniomouth, PA 81110',42);
+INSERT INTO Club VALUES(346,'Club croissant','9031 Heather Gateway
+South Michaelstad, VT 65906',43);
+INSERT INTO Club VALUES(347,'Le Grand croissant','6196 Gray Springs
+Lake Angelahaven, NV 49810',44);
+INSERT INTO Club VALUES(348,'Supremecroissant','472 Robbins Prairie Suite 373
+East Bryanshire, GA 06177',45);
+INSERT INTO Club VALUES(349,'Doner croissant','478 White Trail
+New Stevenfurt, TN 22810',46);
+INSERT INTO Club VALUES(350,'Raclette suprême de croissant','697 Kelly Burgs Suite 863
+Michaelhaven, HI 79920',47);
+INSERT INTO Club VALUES(351,'Club amandes','655 Perkins Meadow Apt. 804
+Craigborough, WV 16487',48);
+INSERT INTO Club VALUES(352,'Le Grand amandes','401 Johns Mountain Suite 191
+Port Juan, MO 13814',49);
+INSERT INTO Club VALUES(353,'Supremeamandes','2726 Santana Wells Suite 571
+New Russellburgh, WA 58372',50);
+INSERT INTO Club VALUES(354,'Doner amandes','9006 Baker Turnpike Suite 192
+New Joseph, AL 89838',51);
+INSERT INTO Club VALUES(355,'Raclette suprême de amandes','6405 Snyder Loop
+Thompsonmouth, IN 55740',52);
+INSERT INTO Club VALUES(356,'Club noix','4880 Sharon Prairie Apt. 259
+Port Kristin, IA 96203',53);
+INSERT INTO Club VALUES(357,'Le Grand noix','117 Dylan Plaza
+Wuview, WA 05117',54);
+INSERT INTO Club VALUES(358,'Supremenoix','6471 Brittany Road
+South Kim, TN 71473',55);
+INSERT INTO Club VALUES(359,'Doner noix','171 Flores Harbor Suite 890
+East Matthewstad, WY 49438',56);
+INSERT INTO Club VALUES(360,'Raclette suprême de noix','404 Houston Loaf Apt. 846
+Waltermouth, AL 62327',57);
+INSERT INTO Club VALUES(361,'Club noisettes','5700 Hamilton Lodge
+Medinaberg, AZ 57958',58);
+INSERT INTO Club VALUES(362,'Le Grand noisettes','5965 Robinson Mountains
+Lake Jerry, ME 96170',59);
+INSERT INTO Club VALUES(363,'Supremenoisettes','65402 John Ville
+Joannaberg, NV 77626',60);
+INSERT INTO Club VALUES(364,'Doner noisettes','49988 Moore Oval
+Powersburgh, VT 01448',61);
+INSERT INTO Club VALUES(365,'Raclette suprême de noisettes','52335 Adam Mountains Suite 830
+Andrewbury, MO 59518',62);
+INSERT INTO Club VALUES(366,'Club cacahuetes','0458 Lauren Passage Suite 100
+Jessicaland, KY 74553',63);
+INSERT INTO Club VALUES(367,'Le Grand cacahuetes','8633 Kenneth Brooks Apt. 418
+Johnsonhaven, ND 25057',64);
+INSERT INTO Club VALUES(368,'Supremecacahuetes','37450 Steven Trail Suite 930
+Meyerberg, OK 30411',65);
+INSERT INTO Club VALUES(369,'Doner cacahuetes','98368 Margaret Throughway
+Sandrachester, MS 71766',66);
+INSERT INTO Club VALUES(370,'Raclette suprême de cacahuetes','9631 Haynes Curve Apt. 946
+New Larry, AZ 83978',67);
+INSERT INTO Club VALUES(371,'Club pistaches','Unit 1179 Box 9804
+DPO AP 59451',68);
+INSERT INTO Club VALUES(372,'Le Grand pistaches','PSC 1912, Box 8686
+APO AE 76884',69);
+INSERT INTO Club VALUES(373,'Supremepistaches','672 Williams Oval
+Tanyaborough, GU 06202',70);
+INSERT INTO Club VALUES(374,'Doner pistaches','0998 Martinez Shoal
+Parsonsstad, PW 35773',71);
+INSERT INTO Club VALUES(375,'Raclette suprême de pistaches','83453 Teresa Cape
+Mitchellmouth, WA 04355',72);
+INSERT INTO Club VALUES(376,'Club raisins_secs','200 Ashley Inlet
+West Lisahaven, AL 88087',73);
+INSERT INTO Club VALUES(377,'Le Grand raisins_secs','795 Goodman Glens
+West Anna, MO 31386',74);
+INSERT INTO Club VALUES(378,'Supremeraisins_secs','72200 Angela Harbor Suite 335
+South Pamela, NC 88892',75);
+INSERT INTO Club VALUES(379,'Doner raisins_secs','6175 Jeffrey Garden Suite 061
+Denisefurt, OK 88281',76);
+INSERT INTO Club VALUES(380,'Raclette suprême de raisins_secs','177 Pearson Corners Suite 006
+West Aliciamouth, MO 41078',77);
+INSERT INTO Club VALUES(381,'Club cereales','545 Leon Shores
+Amandabury, DC 64711',78);
+INSERT INTO Club VALUES(382,'Le Grand cereales','70186 Flores Lake
+Port Kelly, NJ 88639',79);
+INSERT INTO Club VALUES(383,'Supremecereales','01661 Rodriguez Parkway Apt. 794
+West Brandystad, NJ 83749',80);
+INSERT INTO Club VALUES(384,'Doner cereales','7298 Carlos Causeway
+New Nicolechester, NC 17632',81);
+INSERT INTO Club VALUES(385,'Raclette suprême de cereales','9691 Deanna Lane
+Markborough, AL 76915',82);
+INSERT INTO Club VALUES(386,'Club granola','84989 Cannon Port
+Lake Donaldberg, AR 62688',83);
+INSERT INTO Club VALUES(387,'Le Grand granola','643 Stacy Centers Apt. 280
+Sylviamouth, OK 15732',84);
+INSERT INTO Club VALUES(388,'Supremegranola','9081 Richards Landing
+Kathleenmouth, AZ 28306',85);
+INSERT INTO Club VALUES(389,'Doner granola','1584 Marquez Circle
+Floydmouth, KY 72392',86);
+INSERT INTO Club VALUES(390,'Raclette suprême de granola','20600 Wilson Dale Suite 315
+Kariview, AL 79575',87);
+INSERT INTO Club VALUES(391,'Club barre_cereales','55916 Sims Lights
+New Heatherstad, OK 08865',88);
+INSERT INTO Club VALUES(392,'Le Grand barre_cereales','58292 Johnson Mountains Apt. 012
+Mitchellland, LA 35080',89);
+INSERT INTO Club VALUES(393,'Supremebarre_cereales','3271 Jones Vista
+Lake Dennis, PA 57276',90);
+INSERT INTO Club VALUES(394,'Doner barre_cereales','9064 Sally Junction
+Parkermouth, PW 50780',91);
+INSERT INTO Club VALUES(395,'Raclette suprême de barre_cereales','665 Albert Port
+Whiteborough, RI 86940',92);
+INSERT INTO Club VALUES(396,'Club popcorn','6622 Stone Lock
+New Davidside, MI 85194',93);
+INSERT INTO Club VALUES(397,'Le Grand popcorn','1412 Diana Wells
+Lake Darrenberg, NV 37346',94);
+INSERT INTO Club VALUES(398,'Supremepopcorn','02644 Aaron Oval Suite 479
+Anthonymouth, VA 96364',95);
+INSERT INTO Club VALUES(399,'Doner popcorn','639 Key Street Suite 186
+Kimview, VT 21836',96);
+INSERT INTO Club VALUES(400,'Raclette suprême de popcorn','30441 Kirsten Underpass Apt. 137
+Russellfort, ME 07129',97);
+INSERT INTO Club VALUES(401,'Club pizza','3487 Chen Lakes Apt. 802
+East Tammy, DC 15753',98);
+INSERT INTO Club VALUES(402,'Le Grand pizza','970 Miller Plains Suite 672
+Lake Zacharyburgh, NE 79968',99);
+INSERT INTO Club VALUES(403,'Supremepizza','47767 Smith Tunnel Apt. 214
+South Brianbury, MO 77342',100);
+INSERT INTO Club VALUES(404,'Doner pizza','29652 James Viaduct Suite 629
+Daleshire, NY 86210',101);
+INSERT INTO Club VALUES(405,'Raclette suprême de pizza','6807 Brittany Dale
+Burnettborough, VA 16755',1);
+INSERT INTO Club VALUES(406,'Club burger','8007 Cox Ville
+East Maryberg, ND 15787',2);
+INSERT INTO Club VALUES(407,'Le Grand burger','99541 Moore Loaf
+Timothymouth, AR 79446',3);
+INSERT INTO Club VALUES(408,'Supremeburger','333 Angela Heights Suite 395
+South Teresa, VA 91849',4);
+INSERT INTO Club VALUES(409,'Doner burger','51387 Merritt Village
+East Lisafort, VT 10945',5);
+INSERT INTO Club VALUES(410,'Raclette suprême de burger','818 Connie Summit Apt. 128
+North Maryberg, MT 54823',6);
+INSERT INTO Club VALUES(411,'Club sandwich','01718 Elizabeth Ramp
+East Brandi, MT 84706',7);
+INSERT INTO Club VALUES(412,'Le Grand sandwich','42176 Lopez Club Apt. 450
+Michaelmouth, OK 93712',8);
+INSERT INTO Club VALUES(413,'Supremesandwich','91299 Griffin Plaza
+North Edwardfort, ND 30651',9);
+INSERT INTO Club VALUES(414,'Doner sandwich','753 Estes Estate Suite 177
+Lake Daniellehaven, ID 30323',10);
+INSERT INTO Club VALUES(415,'Raclette suprême de sandwich','6888 Devin Corner
+Rebeccahaven, OH 88792',11);
+INSERT INTO Club VALUES(416,'Club frites','157 Joshua Divide
+Lake Summerfort, PW 17069',12);
+INSERT INTO Club VALUES(417,'Le Grand frites','80457 Lane Trace
+North Kennethbury, LA 12604',13);
+INSERT INTO Club VALUES(418,'Supremefrites','94718 Barnes Glens
+New Peterburgh, AS 01639',14);
+INSERT INTO Club VALUES(419,'Doner frites','2260 Brenda Walks
+Hernandezton, WY 76673',15);
+INSERT INTO Club VALUES(420,'Raclette suprême de frites','2227 Darrell Lodge
+Hollyville, NV 10655',16);
+INSERT INTO Club VALUES(421,'Club omelette','93738 Courtney Throughway Apt. 829
+New David, MP 29404',17);
+INSERT INTO Club VALUES(422,'Le Grand omelette','01367 Matthew View
+South Jennifermouth, PA 89908',18);
+INSERT INTO Club VALUES(423,'Supremeomelette','66685 Stephanie Islands
+Underwoodstad, WV 32210',19);
+INSERT INTO Club VALUES(424,'Doner omelette','0499 Hunt Path Apt. 104
+North Don, AR 21530',20);
+INSERT INTO Club VALUES(425,'Raclette suprême de omelette','7713 Angel Lakes
+Garciaberg, GA 07351',21);
+INSERT INTO Club VALUES(426,'Club crepe','403 Watts Freeway
+North Frank, MS 58616',22);
+INSERT INTO Club VALUES(427,'Le Grand crepe','0039 Kim Cape Apt. 484
+West Jeffrey, MN 59865',23);
+INSERT INTO Club VALUES(428,'Supremecrepe','PSC 8306, Box 9643
+APO AE 30531',24);
+INSERT INTO Club VALUES(429,'Doner crepe','USNS Wolf
+FPO AP 54739',25);
+INSERT INTO Club VALUES(430,'Raclette suprême de crepe','8344 Allen Spring
+East Walterview, MN 41375',26);
+INSERT INTO Club VALUES(431,'Club gaufre','5423 Adrian Street Apt. 914
+Gregoryton, NJ 19091',27);
+INSERT INTO Club VALUES(432,'Le Grand gaufre','12373 Perez Alley
+Port Tracyview, CO 37397',28);
+INSERT INTO Club VALUES(433,'Supremegaufre','01208 Richardson Roads
+Lake Jimmy, SD 28260',29);
+INSERT INTO Club VALUES(434,'Doner gaufre','09884 Jonathan Grove
+Lake Johnnybury, FM 76317',30);
+INSERT INTO Club VALUES(435,'Raclette suprême de gaufre','1970 Brandon Mountain
+North Haleytown, CT 90492',31);
+INSERT INTO Club VALUES(436,'Club riz au_lait','8129 Boyd Cliffs
+South Ashley, PR 88881',32);
+INSERT INTO Club VALUES(437,'Le Grand riz au_lait','7886 Hannah Trace Suite 951
+South Courtneymouth, VI 89586',33);
+INSERT INTO Club VALUES(438,'Supremeriz au_lait','6419 Melissa Brooks Suite 082
+Jasonstad, VA 39280',34);
+INSERT INTO Club VALUES(439,'Doner riz au_lait','59095 Murphy Estates Suite 431
+Meganton, AR 77715',35);
+INSERT INTO Club VALUES(440,'Raclette suprême de riz au_lait','68136 Martinez Ford Apt. 684
+Hannahberg, KY 09301',36);
+INSERT INTO Club VALUES(441,'Club mousse_chocolat','650 Julie Parks
+New Brett, AL 25989',37);
+INSERT INTO Club VALUES(442,'Le Grand mousse_chocolat','537 Ryan Rapids
+East Christianmouth, GA 48079',38);
+INSERT INTO Club VALUES(443,'Suprememousse_chocolat','806 Nguyen Terrace Suite 008
+Hernandezville, DC 70028',39);
+INSERT INTO Club VALUES(444,'Doner mousse_chocolat','721 Gutierrez Unions
+North Brian, NC 65026',40);
+INSERT INTO Club VALUES(445,'Raclette suprême de mousse_chocolat','0655 Jennifer Field Suite 698
+Veronicaland, IN 71074',41);
+INSERT INTO Club VALUES(446,'Club tiramisu','9553 Karen Way
+Grayhaven, MD 29810',42);
+INSERT INTO Club VALUES(447,'Le Grand tiramisu','36273 Shawn Estate Apt. 061
+East Christina, NH 96369',43);
+INSERT INTO Club VALUES(448,'Supremetiramisu','0469 Taylor Fall
+East Michael, MH 36371',44);
+INSERT INTO Club VALUES(449,'Doner tiramisu','85242 Valenzuela Route Suite 688
+Davisshire, DC 96953',45);
+INSERT INTO Club VALUES(450,'Raclette suprême de tiramisu','4329 Nelson Throughway
+East Ana, PW 61958',46);
+INSERT INTO Club VALUES(451,'Club lasagnes','47480 Michael Views Suite 675
+Lake Michaelside, HI 87758',47);
+INSERT INTO Club VALUES(452,'Le Grand lasagnes','659 Lee Road
+Lake Jeffreymouth, CT 64431',48);
+INSERT INTO Club VALUES(453,'Supremelasagnes','9198 James Pines
+Aimeetown, LA 90713',49);
+INSERT INTO Club VALUES(454,'Doner lasagnes','70294 Hoffman Run Suite 833
+North Danielmouth, CO 62953',50);
+INSERT INTO Club VALUES(455,'Raclette suprême de lasagnes','743 Jackie Falls
+Kelleyfurt, MN 40810',51);
+INSERT INTO Club VALUES(456,'Club spaghetti','7011 Mendez Fields Apt. 830
+Lake Kristina, LA 68259',52);
+INSERT INTO Club VALUES(457,'Le Grand spaghetti','643 Adams Well Apt. 904
+Port Zacharyfort, FL 60148',53);
+INSERT INTO Club VALUES(458,'Supremespaghetti','650 Guerra Coves
+Chapmanside, GU 32644',54);
+INSERT INTO Club VALUES(459,'Doner spaghetti','563 Howell Terrace
+Wilkinsonville, DE 38822',55);
+INSERT INTO Club VALUES(460,'Raclette suprême de spaghetti','702 Pitts Viaduct
+South Jeffery, MD 87303',56);
+INSERT INTO Club VALUES(461,'Club ravioli','380 Miguel Brook
+South Carlosstad, DC 78938',57);
+INSERT INTO Club VALUES(462,'Le Grand ravioli','876 George Trail
+Port Cynthiaburgh, MP 60049',58);
+INSERT INTO Club VALUES(463,'Supremeravioli','000 Weaver Forks Apt. 756
+South Lauraton, TN 28202',59);
+INSERT INTO Club VALUES(464,'Doner ravioli','698 Danielle Gardens Apt. 215
+Randymouth, NY 91405',60);
+INSERT INTO Club VALUES(465,'Raclette suprême de ravioli','455 Kathryn Union
+Jessicaborough, FL 53906',61);
+INSERT INTO Club VALUES(466,'Club nuggets','5846 Courtney Loop
+Smithfort, MT 85194',62);
+INSERT INTO Club VALUES(467,'Le Grand nuggets','86398 Mitchell Tunnel
+West Amandaton, TN 86741',63);
+INSERT INTO Club VALUES(468,'Supremenuggets','96857 Sullivan Fields
+South Denisemouth, ME 45623',64);
+INSERT INTO Club VALUES(469,'Doner nuggets','7452 Manuel Loop Suite 168
+Daleshire, MH 30119',65);
+INSERT INTO Club VALUES(470,'Raclette suprême de nuggets','70212 White Meadows Apt. 568
+Lake Ashleyberg, NM 52771',66);
+INSERT INTO Club VALUES(471,'Club cordon_bleu','Unit 2264 Box 0606
+DPO AE 13372',67);
+INSERT INTO Club VALUES(472,'Le Grand cordon_bleu','908 Alexander Light
+Amberhaven, KS 23382',68);
+INSERT INTO Club VALUES(473,'Supremecordon_bleu','9171 Green Flat Suite 938
+Bakerbury, HI 51189',69);
+INSERT INTO Club VALUES(474,'Doner cordon_bleu','8008 Melanie Mills
+Sheppardberg, VA 69129',70);
+INSERT INTO Club VALUES(475,'Raclette suprême de cordon_bleu','15168 White Divide
+Mariahchester, CO 50295',71);
+INSERT INTO Club VALUES(476,'Club steak hache','870 Russell Heights Suite 060
+Lake Lorichester, MH 71299',72);
+INSERT INTO Club VALUES(477,'Le Grand steak hache','Unit 4864 Box 3315
+DPO AE 09222',73);
+INSERT INTO Club VALUES(478,'Supremesteak hache','13618 Ashley Orchard Apt. 565
+Escobarchester, ME 73905',74);
+INSERT INTO Club VALUES(479,'Doner steak hache','01109 Ralph Glen Apt. 953
+Phillipton, NM 03058',75);
+INSERT INTO Club VALUES(480,'Raclette suprême de steak hache','3238 Matthews Mountains Apt. 496
+Weisston, RI 94653',76);
+INSERT INTO Club VALUES(481,'Club roti','40224 Joseph Streets Apt. 774
+Lewisland, DE 95629',77);
+INSERT INTO Club VALUES(482,'Le Grand roti','465 Monroe Valleys
+West Tammystad, PA 14362',78);
+INSERT INTO Club VALUES(483,'Supremeroti','051 Morales Oval
+Glennburgh, NE 51818',79);
+INSERT INTO Club VALUES(484,'Doner roti','9022 Diana Knoll
+Chapmanmouth, CT 72559',80);
+INSERT INTO Club VALUES(485,'Raclette suprême de roti','12048 Benjamin Fields
+Kevinville, DC 65592',81);
+INSERT INTO Club VALUES(486,'Club sushi','7295 Simmons Mission
+Johnsonburgh, OR 82840',82);
+INSERT INTO Club VALUES(487,'Le Grand sushi','1568 Joseph Expressway Suite 053
+West Robertmouth, SD 23342',83);
+INSERT INTO Club VALUES(488,'Supremesushi','7132 Annette Crest Apt. 302
+Gonzalezton, MS 92076',84);
+INSERT INTO Club VALUES(489,'Doner sushi','22449 Moran Port Apt. 064
+South Brittany, NC 31808',85);
+INSERT INTO Club VALUES(490,'Raclette suprême de sushi','17369 Bradshaw Cove Suite 479
+Wardburgh, SD 52095',86);
+INSERT INTO Club VALUES(491,'Club sashimi','18905 Steven Crest Apt. 784
+Kempburgh, NM 30946',87);
+INSERT INTO Club VALUES(492,'Le Grand sashimi','Unit 7528 Box 9214
+DPO AP 54059',88);
+INSERT INTO Club VALUES(493,'Supremesashimi','88927 Jillian Terrace Apt. 591
+Port Andrew, MD 04450',89);
+INSERT INTO Club VALUES(494,'Doner sashimi','88631 Martinez Meadows
+Lake Joyside, NC 47935',90);
+INSERT INTO Club VALUES(495,'Raclette suprême de sashimi','607 Coleman Street
+Steelefurt, ME 39519',91);
+INSERT INTO Club VALUES(496,'Club tempura','63812 Sanchez Springs
+Lake Stevenhaven, IA 81959',92);
+INSERT INTO Club VALUES(497,'Le Grand tempura','52304 Steele Isle Suite 207
+Jasonbury, CO 63484',93);
+INSERT INTO Club VALUES(498,'Supremetempura','7827 Hernandez Plains
+Greenburgh, MT 98320',94);
+INSERT INTO Club VALUES(499,'Doner tempura','46018 Elliott Spurs
+East Stephanie, HI 62173',95);
+INSERT INTO Club VALUES(500,'Raclette suprême de tempura','952 William Mills
+East Lauramouth, VI 32794',96);

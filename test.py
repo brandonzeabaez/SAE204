@@ -1,9 +1,25 @@
+from http.cookiejar import uppercase_escaped_char
+
 from faker import Faker
 from random import randint
 import random
 import numpy as np
 fake = Faker()
-
+def couplesUniques(lst1:list,lst2 :list)->list :
+    couples = set()
+    while len(couples) < randint(min(len(lst1),len(lst2)),len(lst1)*len(lst2)):
+        i = random.randint(1, len(lst1))
+        j = random.randint(1, len(lst2))
+        couples.add((i, j))
+    return couples
+def supprimerGuillemetsString(string : str)->str :
+    string2 = ""
+    for i in string :
+        if (i != '\''):
+            string2 += i
+    return string2
+def toUpperCase(string : str)->str :
+    return string.upper()
 table_tenrac = []
 grades_inf_contraintes = ['Affilié', 'Symphatisant', 'Adhérent']
 grades_sup_contraintes = ['Chevalier', 'Dame', 'Grand Chevalier', 'Haute Dame', 'Commandeur', 'Grande Croix']
@@ -92,7 +108,7 @@ sauce_contrainte = [
     "sauce algerienne", "sauce andalouse", "sauce burger", "sauce pita", "sauce kebab",
     "sauce miel moutarde"]
 Sauce =  [{'idS' : i,
-          'nomSauce' : sauce_contrainte[i-1].upper()}
+          'nomSauce' : "'"+sauce_contrainte[i-1].upper()+"'"}
             for i in range(1,len(sauce_contrainte)+1)]
 ingredients_contraintes = ["Pomme","Banane","Orange","Poire","Fraise","Framboise","Myrtille","Cerise",
 "Pêche","Abricot","Ananas","Mangue","Kiwi","Citron","Lime","Pastèque",
@@ -107,20 +123,20 @@ ingredients_contraintes = ["Pomme","Banane","Orange","Poire","Fraise","Framboise
 "Miel","Confiture","Chocolat noir","Chocolat au lait","Chocolat blanc",
 "Vanille","Cannelle","Muscade","Curry","Curcuma","Paprika","Cumin","Basilic","Persil","Coriandre","Thym","Romarin","Laurier",
 "Menthe","Sauce tomate","Ketchup","Mayonnaise","Moutarde","Sauce soja",
-"Vinaigre","Huile d'olive","Huile de tournesol","Huile de coco","Eau",
-"Eau gazeuse","Café","Thé","Lait d'amande","Lait de soja","Tofu",
+"Vinaigre","Huile de olive","Huile de tournesol","Huile de coco","Eau",
+"Eau gazeuse","Café","Thé","Lait de amande","Lait de soja","Tofu",
 "Tempeh","Truffe","Noix","Amande","Noisette","Pistache",
 "Cajou","Raisin sec","Datte","Figue","Abricot sec","Noix de coco",
 "Sucre glace","Levure","Levure chimique","Gélatine","Agar-agar",
 "Piment","Tortilla","Tacos","Riz basmati","Riz thaï","Nouilles","Nouilles chinoises",
 "Nouilles ramen","Wasabi","Fenouil","Endive",
 "Mangue séchée","Banane séchée","Sel de mer","Fleur de sel","Sucre vanillé",
-"Sirop d'érable","Caramel","Coulis de fruits","Crème chantilly",
+"Sirop de érable","Caramel","Coulis de fruits","Crème chantilly",
 "Glace vanille","Glace chocolat","Sorbet citron","Sorbet fraise",
 "Biscuit","Gâteau","Croissant","Pain au chocolat","Brioche","Crêpe",
 "Gaufre","Muesli","Corn flakes","Riz soufflé","Barre de céréales"]
 Ingredient =  [{'idI' : i,
-          'nomIngredient' : ingredients_contraintes[i-1].upper()}
+          'nomIngredient' : "'"+ ingredients_contraintes[i-1].upper() +"'"}
             for i in range(1,len(ingredients_contraintes)+1)]
 nomMachine_contrainte =  [
 "Four","Four a micro-ondes","Mixeur","Blender","Robot pâtissier",
@@ -134,7 +150,7 @@ nomMachine_contrainte =  [
 "Machine à glace","Fumoir","Barbecue électrique","Barbecue gaz"
 ]
 NomMachine = [{'idNM' : i,
-          'nomMachine' : nomMachine_contrainte[i-1].upper()}
+          'nomMachine' : "'"+nomMachine_contrainte[i-1].upper()+"'"}
             for i in range(1,len(nomMachine_contrainte)+1)]
 modele_contrainte = ["Pro 100","Pro 200","Pro 300","Ultra","Ultra X","Max","Max Plus",
 "Chef Edition","Home","Home Plus","SmartCook","SmartCook X",
@@ -146,7 +162,7 @@ modele_contrainte = ["Pro 100","Pro 200","Pro 300","Ultra","Ultra X","Max","Max 
 "Silver Edition","Black Edition","Premium","Deluxe",
 "Compact","Family","XL","XXL"]
 Modele = [{'idMo' : i,
-          'nomMachine' : modele_contrainte[i-1].upper()}
+          'nomMachine' : "'"+modele_contrainte[i-1].upper()+"'"}
             for i in range(1,len(modele_contrainte)+1)]
 typeEntretien_contrainte = [
 "Nettoyage complet",
@@ -169,13 +185,13 @@ typeEntretien_contrainte = [
 "Nettoyage pompe","Remplacement roulement",
 "Test fonctionnement","Contrôle qualité","Maintenance préventive"]
 TypeEntretien = [{"idE" : i ,
-                "typeEntretien" :  typeEntretien_contrainte[i-1]}
+                "typeEntretien" : "'"+ typeEntretien_contrainte[i-1].upper()+"'"}
                  for i in range (1,len(typeEntretien_contrainte)+1)]
-
+tmpMachine=1
 Machine = [{"idM" : i,
-            "idNM" : randint(1,len(NomMachine)-1),
-            "idMo" : randint(1,len(Modele)-1)}
-           for i in range (1,10000)
+            "idNM" : j[0],
+            "idMo" : j[1]}
+           for (i,j) in zip(range(1,len(NomMachine)*len(Modele)+1),couplesUniques(NomMachine,Modele))
             ]
 
 raisonSocial_prefixes = [
@@ -206,7 +222,7 @@ Organisme = [{"numeroSiret" : numeroSiret[i-1],
             ]
 tmp = [{'idT': 0,
        'nomTitre': '::'}]
-Titre = [{"idT" : i,
+Titre = [{"idTi" : i,
           "nomTitre" : titre_contraintes[i-1]}
          for i in range (1,len(titre_contraintes)+1)
          ]
@@ -217,11 +233,14 @@ Dignite = [{"idD" : i,
           "nomDignite" : dignite_contraintes[i-1]}
            for i in range (1,len(dignite_contraintes)+1)]
 Dignite = tmp + Dignite
-tmp = [{'idM' : 0,
+tmp = [{'idRa' : 0,
         'nomRang' : '::'}]
+
 Rang = [{"idRa" : i,
           "nomRang" : rang_contraintes[i-1]}
            for i in range (1,len(rang_contraintes)+1)]
+Rang = tmp + Rang
+
 idgrade_contrainte = [ i for i in range (1,len(grades_inf_contraintes)+len(grades_sup_contraintes)+1)]
 PasTresHautGradee = [{"idG" : i,
                   "nomGrade" : j}
@@ -244,7 +263,7 @@ ordreNom_contrainte = [
     "frites", "frites cheese", "frites bacon", "frites chili", "frites curly",
     "nuggets", "tenders poulet", "wings poulet", "wings barbecue", "wings spicy",
     "pizza margherita", "pizza pepperoni", "pizza fromage", "pizza 4 fromages", "pizza barbecue",
-    "pizza hawaienne", "pizza viande", "pizza veggie", "pizza poulet", "pizza pepperoni fromage",
+    "pizza hawaienne", "pizza viande", "pizza veggie", "pizza poulet", "pepperoni fromage",
     "tacos", "tacos poulet", "tacos boeuf", "tacos mixte", "tacos cordon bleu",
     "kebab", "kebab poulet", "kebab boeuf", "kebab mixte", "kebab galette",
     "wrap poulet", "wrap boeuf", "wrap veggie", "wrap crispy", "wrap spicy",
@@ -259,12 +278,33 @@ ordreNom_contrainte = [
     "tiramisu", "cheesecake", "pancakes", "gaufre", "crepe",
     "omelette sandwich"
 ]
+departements = [
+"Ain","Aisne","Allier","Alpes-de-Haute-Provence","Hautes-Alpes","Alpes-Maritimes",
+"Ardèche","Ardennes","Ariège","Aube","Aude","Aveyron",
+"Bouches-du-Rhône","Calvados","Cantal","Charente","Charente-Maritime","Cher",
+"Corrèze","Corse-du-Sud","Haute-Corse","Côte-de Or","Côtes-de Armor","Creuse",
+"Dordogne","Doubs","Drôme","Eure","Eure-et-Loir","Finistère",
+"Gard","Haute-Garonne","Gers","Gironde","Hérault","Ille-et-Vilaine",
+"Indre","Indre-et-Loire","Isère","Jura","Landes","Loir-et-Cher",
+"Loire","Haute-Loire","Loire-Atlantique","Loiret","Lot","Lot-et-Garonne",
+"Lozère","Maine-et-Loire","Manche","Marne","Haute-Marne","Mayenne",
+"Meurthe-et-Moselle","Meuse","Morbihan","Moselle","Nièvre","Nord",
+"Oise","Orne","Pas-de-Calais","Puy-de-Dôme","Pyrénées-Atlantiques","Hautes-Pyrénées",
+"Pyrénées-Orientales","Bas-Rhin","Haut-Rhin","Rhône","Haute-Saône","Saône-et-Loire",
+"Sarthe","Savoie","Haute-Savoie","Paris","Seine-Maritime","Seine-et-Marne",
+"Yvelines","Deux-Sèvres","Somme","Tarn","Tarn-et-Garonne","Var",
+"Vaucluse","Vendée","Vienne","Haute-Vienne","Vosges","Yonne","Territoire de Belfort",
+"Essonne","Hauts-de-Seine","Seine-Saint-Denis","Val-de-Marne","Val-de Oise",
+"Guadeloupe","Martinique","Guyane","La Réunion","Mayotte"
+]
 Ordre_contrainte = Club_contrainte[1:-1] + ['Ordre']
 Ordre = [{"idO" : i,
-          "nomOrdre" : Ordre_contrainte[randint(0,len(Ordre_contrainte)-1)] + ' ' + ordreNom_contrainte[i%len(ordreNom_contrainte)]}
+          "nomOrdre" : toUpperCase("'"+Ordre_contrainte[randint(0,len(Ordre_contrainte)-1)]+ ' ' + ordreNom_contrainte[i%len(ordreNom_contrainte)]+"'"),
+          "Territoire" :toUpperCase("'"+ departements[i-1]+"'")}
         for i in range(1,102)]
 Club = [{"idO_1" : i,
-        "nomClub" : nomClub_contrainte[i-1],
+        "nomClub" : "'"+nomClub_contrainte[i-1]+"'",
+         "adresseClub" : "'"+fake.address() + "'",
          "idO" : (i-1)%101+1
          }
         for i in range (1,len(nomClub_contrainte)+1)]
@@ -278,7 +318,7 @@ Reunion=[{'idReunion' : i,
 # /TODO
 
 
-legumes_contraintes = ["carotte","pomme_de_terre",
+legumes_contraintes = ["::","carotte","pomme_de_terre",
         "tomate","concombre",
         "courgette","aubergine",
         "poivron","oignon","ail","échalote",
@@ -304,22 +344,18 @@ legumes_contraintes = ["carotte","pomme_de_terre",
         "chicorée","pissenlit",
         "plantain","ortie","cardon","chayote",
         "christophine","calebasse","coloquinte"]
-Legume = [{"idL" : i+1,"nomLegume" : legumes_contraintes[i]} for i in range(len(legumes_contraintes))]
+Legume = [{"idL" : i+1,
+           "nomLegume" : "'"+legumes_contraintes[i].upper()+"'"
+          }
+          for i in range(len(legumes_contraintes))]
 
-Plat = [{"idP" : i+1,
-        "nomPlat" : fake.random_element(elements=ordreNom_contrainte),
-        "idL" : fake.random_element(elements=legumes_contraintes)}
-        for i in range(randint(0,len(Legume)-1))]
+Plat = [{"idP" : k+1,
+        "nomPlat" : toUpperCase("'" + ordreNom_contrainte[i-1] + ' ' + supprimerGuillemetsString(Legume[j-1]['nomLegume']) + "'"),
+        "idL" : Legume[j-1]["idL"] }
+        for (k,(i,j)) in zip(range(min(len(ordreNom_contrainte),len(Legume))),couplesUniques(ordreNom_contrainte,Legume))]
 
 
-def couplesUniques(lst1:list,lst2 :list)->list :
-    couples = set()
-    while len(couples) < randint(min(len(lst1),len(lst2)),len(lst1)*len(lst2)):
-        i = random.randint(1, len(lst1))
-        j = random.randint(1, len(lst2))
-        couples.add((i, j))
-    return couples
-
+print(Plat)
 Constitue = [{"idP" : i,
               "idA" : j}
              for (i,j) in couplesUniques(Plat,Aliments)
@@ -379,14 +415,14 @@ combinaisonNecessite=tripletsUniques(Modele,NomMachine,TypeEntretien)
 Necessite = [{"idMo" : i,
               "idNM" :   j,
                "idE" : k,
-               "periodicite" : str(str(randint(1,valeur_libelle[i%3])) + ' ' + libelle[i%3]) }
+               "periodicite" : "'"+str(str(randint(1,valeur_libelle[i%3])) + ' ' + libelle[i%3]) +"'" }
             for (i,j,k) in combinaisonNecessite
             ]
-
+print(Necessite[:5])
 Compose = [{"idP" : i,
             "idR" : j}
             for (i,j) in couplesUniques(Plat,Repas)]
-estConstitue = [{"idS" : i,
+Est_constitue = [{"idS" : i,
             "idI" : j}
            for (i,j) in couplesUniques(Sauce,Ingredient)]
 
@@ -395,20 +431,207 @@ Organise = [{"idReunion" : Reunion[i-1]["idReunion"],
             "idR" : j}
             for (i,j) in couplesUniques(Reunion,Repas)]
 
-def creationSIRET(n : int)->list:
-    SIRET_liste=[]
-    SIRET=""
-    while(len(SIRET_liste) < n or len(SIRET_liste) != len(set(SIRET_liste))):
-        SIRET =""
-        for i in range(14) :
-            SIRET+=str(random.randint(1,9))
-        SIRET_liste.append(SIRET)
-    return SIRET_liste
+def creationListeNumerosString(n : int,valeur : int)->list:
+    Num_liste=[]
+    NUM=""
+    while(len(Num_liste) < n or len(Num_liste) != len(set(Num_liste))):
+        Num =""
+        for i in range(valeur) :
+            Num+=str(random.randint(1,9))
+        Num_liste.append(Num)
+    return Num_liste
 Organisme = [{"numeroSiret" : i ,
               "raisonSociale" : fake.random_element(elements=raisonSocial_contrainte)}
-             for i in creationSIRET(10000)]
+             for i in creationListeNumerosString(10000,14)]
+Grade = PasTresHautGradee+TresHautGradee
+Tenrac = [{"idO" : i,
+          "numeroSiret" : Organisme[randint(0,len(Organise)-1)]["numeroSiret"],
+          "idT" : i,
+          "nomTenrac": '\''+fake.name()+'\'',
+          "courrier" :  '\''+fake.email()+'\'',
+          "telephone" : '\''+fake.phone_number()+'\'',
+          "adressePostal" : '\''+fake.postcode()+'\'',
+          "idG": randint(0,len(Grade)),
+           'idTi' : randint(0,len(Titre)),
+          "idD": randint(0,len(Dignite)),
+          "idRa": randint(0,len(Rang)) }
+          for i in range(1,10)
+          ]
 
 #/TODO Evite
 #/TODO Tenrac
 #/TODO Entretien
 #/Todo Assiste
+import oracledb
+import oracledb
+import faker
+connection = oracledb.connect(
+    user="ADMIN",
+    password="TenracPireSae2026@",
+    dsn="tenrac_low",
+    config_dir="./wallet",
+    wallet_location="./wallet",
+    wallet_password="TenracKebab@1"
+)
+
+def obtenirToutesLesTables()-> list :
+    lst1 =[]
+    with connection.cursor() as cursor:
+        sql = ("SELECT table_name FROM USER_TABLES "
+               +"WHERE table_name<>'DBTOOLS$EXECUTION_HISTORY'")
+        for i in cursor.execute(sql) :
+            lst1.append(i)
+    lst2 = [i[0] for i in lst1]
+    return lst2
+def dropToutesLesTables() :
+    lst = obtenirToutesLesTables()
+    with connection.cursor() as cursor:
+        for i in lst:
+            sql = ("DROP TABLE  "+i+" CASCADE CONSTRAINTS")
+            cursor.execute(sql)
+            print('Table dropped : ',i)
+#def createToutesLesTables() :
+#dropToutesLesTables()
+#cursor=connection.cursor()
+
+#print(obtenirToutesLesTables())
+def createToutesLesTables() :
+    lst = []
+    with open('requetes/intention_de_la_BD.txt','r') as file :
+        var=""
+        for line in file.readlines() :
+            for char in line.strip() :
+                if char != ';' :
+                    var+=char
+                else :
+                    lst.append(var)
+                    var=""
+    with connection.cursor() as cursor:
+        for sql in lst:
+            cursor.execute(sql)
+            print('Table created :',obtenirToutesLesTables()[-1])
+def createInsertionFiles() :
+    for i in obtenirToutesLesTables() :
+        f = open('requetes/insertion_donnees'+i+'.txt','w')
+        f.close()
+list_test = [{"idA" : 1,"nomAliment" : "'pneus--de-voitures'"},
+             {"idB" : 2,"nomAliment" : "'huile de moteur'"},
+            ]
+#def insertInsertionDonnees(nom_de_la_table,donnees : lst) :
+#for i in donnees :
+def effacerDonnesTables(nom_table : str) :
+    cursor = connection.cursor()
+    cursor.execute('TRUNCATE TABLE '+nom_table)
+
+
+def insertionDonneesTables(donnees,nom_table) :
+    cursor = connection.cursor()
+    f = open('requetes/insertion_donnees/' + nom_table + '.txt', 'w')
+    for i in donnees :
+        sql="INSERT INTO " + nom_table + " VALUES("
+        for j in i.values() :
+            sql+=str(j)+","
+        sql = sql[:-1]
+        sql+=")"
+        print(sql)
+        cursor.execute(sql)
+        f.write(sql+';\n')
+    f.close()
+def effacerContenuDuFichier(fiename) :
+    file = open('requetes/' + fiename, 'w')
+    file.close()
+
+
+
+
+
+
+
+
+
+
+#test
+aliments_contraintes = [
+    "pomme", "banane", "poire", "peche", "abricot", "ananas", "mangue", "fraise", "framboise", "cerise",
+    "orange", "citron", "pamplemousse", "raisin", "melon", "pasteque", "kiwi", "prune", "figue", "datte",
+    "riz", "pates", "pain", "semoule", "quinoa", "avoine", "ble", "mais", "farine", "couscous",
+    "poulet", "boeuf", "porc", "agneau", "dinde", "canard", "steak", "jambon", "saucisse", "lardon",
+    "saumon", "thon", "cabillaud", "sardine", "maquereau", "truite", "crevettes", "moules", "huitres", "crabe",
+    "oeuf", "lait", "fromage", "yaourt", "beurre", "creme", "glace", "lait_condense", "lait poudre", "mozzarella",
+    "chocolat", "sucre", "miel", "confiture", "nutella", "caramel", "biscuit", "gateau", "tarte", "croissant",
+    "amandes", "noix", "noisettes", "cacahuetes", "pistaches", "raisins_secs", "cereales", "granola", "barre_cereales", "popcorn",
+    "pizza", "burger", "sandwich", "frites", "omelette", "crepe", "gaufre", "riz au_lait", "mousse_chocolat", "tiramisu",
+    "lasagnes", "spaghetti", "ravioli", "nuggets", "cordon_bleu", "steak hache", "roti", "sushi", "sashimi", "tempura"
+]
+#dropToutesLesTables()
+Organisation = [{'idO': i} for i in range(1,len(Ordre)+len(Club))]
+print(len(Organisation),print(len(Club)))
+#createToutesLesTables()
+cursor = connection.cursor()
+Aliments = [{'idA' : i,
+             'nomAliment' : "'"+aliments_contraintes[i-1].upper()+"'"}
+            for i in range(1,len(aliments_contraintes)+1)]
+#print(obtenirToutesLesTables())
+#effacerDonnesTables('Aliment')
+def ajouteToutesDonneesTables() :
+    insertionDonneesTables(Legume,'Legume')
+    insertionDonneesTables(Aliments,'Aliment')
+    insertionDonneesTables(Sauce,'Sauce')
+    insertionDonneesTables(Ingredient,'Ingredient')
+    insertionDonneesTables(Est_constitue,'Est_constitue')
+    insertionDonneesTables(Plat, 'Plat')
+    insertionDonneesTables(Contient, 'Contient')
+    insertionDonneesTables(Constitue, 'Constitue')
+    insertionDonneesTables(Modele, 'Modele')
+    insertionDonneesTables(NomMachine, 'NomMachine')
+    insertionDonneesTables(TypeEntretien, 'typeEntretien')
+    insertionDonneesTables(Necessite, 'Necessite')
+    insertionDonneesTables(Machine, 'Machine')
+    insertionDonneesTables(Organisation, 'Organisation')
+    insertionDonneesTables(Ordre, 'Ordre')
+    insertionDonneesTables(Club, 'Club')
+def suppressionToutesDonneesTables() :
+    effacerDonnesTables('Legume')
+    effacerDonnesTables('Ingredient')
+    effacerDonnesTables('Sauce')
+    effacerDonnesTables('Est_constitue')
+    effacerDonnesTables('Plat')
+    effacerDonnesTables('Contient')
+    effacerDonnesTables('Constitue')
+    effacerDonnesTables('Modele')
+    effacerDonnesTables('NomMachine')
+    effacerDonnesTables('TypeEntretien')
+    effacerDonnesTables('Necessite')
+    effacerDonnesTables('Machine')
+    effacerDonnesTables('Organisation')
+    effacerDonnesTables('Ordre')
+    effacerDonnesTables('Club')
+
+def test():
+    dropToutesLesTables()
+    createToutesLesTables()
+    ajouteToutesDonneesTables()
+#test()
+
+
+#dropToutesLesTables()
+#createToutesLesTables()
+#suppressionToutesDonneesTables()
+#ajouteToutesDonneesTables()
+#suppressionToutesDonneesTables()
+#ajouteToutesDonneesTables()
+#print(cursor.execute("SELECT * FROM Aliment").fetchall())
+
+
+
+#insertionDonneesTables(list_test,'Aliment')
+
+#effacerContenuDuFichier('insertion_donneesAliment.txt')
+#effacerDonnesTables('Aliment')
+
+#dropToutesLesTables()
+#createToutesLesTables()
+#createInsertionFiles()
+
+connection.commit()
+connection.close()
